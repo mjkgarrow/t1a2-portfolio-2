@@ -1,0 +1,14 @@
+// Defaults
+@import './default/default';
+
+// Components
+@import './components/animation';
+@import './components/background';
+@import './components/footer';
+@import './components/header';
+@import './components/nav';
+
+
+// Pages
+@import './pages/home';
+@import './pages/about';
