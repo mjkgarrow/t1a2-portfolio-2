@@ -1,3 +1,19 @@
 @import '../default/colours';
 @import '../components/animation';
 @import '../components/mixins';
+
+
+.things {
+  position: absolute;
+  width: 100%;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    aspect-ratio: 1.61;
+    mix-blend-mode: multiply;
+  }
+}
