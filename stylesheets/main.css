@@ -81,6 +81,26 @@ body {
   fill: rgb(217, 217, 217);
 }
 
+@media only screen and (min-width: 600px) {
+  .blobs .blob {
+    max-width: 400px;
+    left: 50vw;
+    translate: -50% -50%;
+    transform: scale(2);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .blobs .blob {
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    mix-blend-mode: multiply;
+    top: 50vh;
+    left: 70vw;
+    translate: -50% -50%;
+    transform: scale(2);
+  }
+}
 @-webkit-keyframes move {
   0% {
     transform: scale(1) translateY(0);
@@ -92,7 +112,6 @@ body {
     transform: scale(1) translateY(0);
   }
 }
-
 @keyframes move {
   0% {
     transform: scale(1) translateY(0);

@@ -46,3 +46,31 @@
     }
   }
 }
+
+// For tablet
+@media only screen and (min-width: 600px) {
+  .blobs {
+    .blob {
+      max-width: 400px;
+      left: 50vw;
+      translate: -50% -50%;
+      transform: scale(2);
+    }
+  }
+}
+
+// For desktop
+@media only screen and (min-width: 1000px) {
+  .blobs {
+    .blob {
+      max-width: 500px;
+      width: 100%;
+      position: absolute;
+      mix-blend-mode: multiply;
+      top: 50vh;
+      left: 70vw;
+      translate: -50% -50%;
+      transform: scale(2);
+    }
+  }
+}
