@@ -1,5 +1,29 @@
 @import '../default/colours';
+@import '../components/mixins';
 
 main {
-  transition: all 300ms ease-in-out;
+  @include flex-center;
+  height: 100vh;
+  width: 100vw;
+  transition: filter 300ms ease-in-out;
+  margin: 50px 0 50px 0;
+  section {
+    height: 80%;
+    padding: 20px;
+    max-width: 500px;
+  }
+}
+
+// For tablet
+@media only screen and (min-width: 600px) {
+  main {
+    section {
+      max-width: 800px;
+    }
+  }
+}
+
+// For desktop
+@media only screen and (min-width: 1000px) {
+
 }

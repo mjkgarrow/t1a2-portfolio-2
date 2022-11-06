@@ -8,6 +8,7 @@
   height: 100%;
   overflow: hidden;
   .blob {
+    max-width: 700px;
     width: 100%;
     position: absolute;
     mix-blend-mode: multiply;

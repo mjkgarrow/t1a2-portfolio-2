@@ -59,6 +59,7 @@ body {
   overflow: hidden;
 }
 .blobs .blob {
+  max-width: 700px;
   width: 100%;
   position: absolute;
   mix-blend-mode: multiply;
@@ -80,6 +81,29 @@ body {
   fill: rgb(217, 217, 217);
 }
 
+@-webkit-keyframes move {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.01) translateY(-5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.01) translateY(-5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
 footer {
   bottom: 0;
   position: fixed;
@@ -100,7 +124,8 @@ footer .socials-container div {
 }
 
 header {
-  transition: all 300ms ease-in-out;
+  color: rgb(22, 8, 54);
+  transition: color 200ms ease-in-out;
   z-index: 1;
   position: fixed;
   text-align: center;
@@ -110,10 +135,24 @@ header {
   transform: translateX(-50%);
 }
 header:hover {
-  color: black;
+  color: white;
 }
 
+@media only screen and (min-width: 600px) {
+  header {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  header {
+    font-size: 1em;
+    left: 140px;
+    top: 20px;
+    transform: translateX(0%);
+  }
+}
 nav {
+  z-index: 1;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -121,7 +160,6 @@ nav {
 }
 nav .button-container {
   width: 50px;
-  height: 50px;
 }
 nav .button-container svg {
   transform: scale(2);
@@ -142,6 +180,7 @@ nav .button-container svg g path:active {
   fill: rgb(217, 217, 217);
 }
 nav #nav-links {
+  font-size: 15vw;
   opacity: 0;
   transform: translateX(-10em);
   transition: all 300ms ease-in-out;
@@ -159,20 +198,61 @@ nav #nav-links h3:hover {
 }
 
 main {
-  transition: all 300ms ease-in-out;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  transition: filter 300ms ease-in-out;
+  margin: 50px 0 50px 0;
+}
+main section {
+  height: 80%;
+  padding: 20px;
+  max-width: 500px;
 }
 
-.things {
-  position: absolute;
-  width: 100%;
+@media only screen and (min-width: 600px) {
+  main section {
+    max-width: 800px;
+  }
 }
-.things img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  top: 0;
-  left: 0;
-  aspect-ratio: 1.61;
-  mix-blend-mode: multiply;
+@keyframes move {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.01) translateY(-5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+main section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+main section h1 {
+  flex: 2;
+  padding: 80px 0 0 0;
+}
+main section h1 a span {
+  display: inline-block;
+  -webkit-animation: move 2s forwards infinite;
+          animation: move 2s forwards infinite;
+}
+main section p {
+  width: 90%;
+  flex: 1;
+  font-size: 0.7em;
+  text-align: end;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    font-size: 1.5em;
+  }
 }/*# sourceMappingURL=main.css.map */
