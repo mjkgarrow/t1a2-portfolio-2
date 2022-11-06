@@ -183,6 +183,12 @@ footer .socials-container .socials-content {
   justify-content: space-evenly;
   width: 150px;
 }
+footer .socials-container .socials-content a {
+  transition: color 200ms ease-in-out;
+}
+footer .socials-container .socials-content a:hover {
+  color: rgb(22, 8, 54);
+}
 
 @media only screen and (min-width: 600px) {
   footer {
@@ -314,7 +320,7 @@ nav #nav-links h3:hover {
 }
 main {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -350,7 +356,7 @@ main {
 }
 main section {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -388,7 +394,11 @@ main section p span:hover {
     height: 70%;
   }
   main section h1 {
+    align-self: flex-start;
     width: 550px;
+  }
+  main section p {
+    align-self: flex-end;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -407,6 +417,9 @@ main section p span:hover {
     width: 450px;
   }
   main section p {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
     align-self: end;
     font-size: 0.65em;
     float: right;

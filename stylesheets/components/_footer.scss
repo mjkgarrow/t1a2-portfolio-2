@@ -16,6 +16,12 @@ footer {
       display: flex;
       justify-content: space-evenly;
       width: 150px;
+      a {
+        transition: color 200ms ease-in-out;
+      }
+      a:hover {
+        color: $layer-5;
+      }
     }
   }
 }

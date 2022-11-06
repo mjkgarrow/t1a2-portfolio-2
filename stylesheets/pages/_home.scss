@@ -44,7 +44,11 @@ main {
       max-width: 800px;
       height: 70%;
       h1 {
+        align-self: flex-start;
         width: 550px;
+      }
+      p {
+        align-self: flex-end;
       }
     }
   }
@@ -65,6 +69,7 @@ main {
         width: 450px;
       }
       p {
+        min-height: fit-content;
         align-self: end;
         font-size: 0.65em;
         float: right;
