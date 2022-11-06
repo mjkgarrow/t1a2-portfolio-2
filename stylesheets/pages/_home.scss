@@ -20,6 +20,7 @@ main {
       }
     }
     p {
+      line-height: 1.2;
       width: 90%;
       font-size: 0.7em;
       text-align: end;
@@ -30,12 +31,6 @@ main {
           color: $layer-5;
         }
       }
-      span:nth-child(1) {
-        animation: move 3s backwards infinite;
-      }
-      span:nth-child(2) {
-        animation: move 2s forwards infinite;
-      }
     }
   }
 }
@@ -45,11 +40,38 @@ main {
 @media only screen and (min-width: 600px) {
   main {
     font-size: 1.5em;
-
+    section {
+      max-width: 800px;
+      height: 70%;
+      h1 {
+        width: 550px;
+      }
+    }
   }
 }
 
 // For desktop
 @media only screen and (min-width: 1000px) {
-
+  main {
+    font-size: 1.5em;
+    section {
+      margin-top: 50px;
+      align-items: flex-start;
+      width: 90%;
+      max-width: 90%;
+      height: 80%;
+      h1 {
+        padding-top: 10px;
+        width: 450px;
+      }
+      p {
+        align-self: end;
+        font-size: 0.65em;
+        float: right;
+        width: 420px;
+        padding-top: 50px;
+        padding: 0;
+      }
+    }
+  }
 }

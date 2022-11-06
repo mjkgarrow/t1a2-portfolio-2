@@ -45,7 +45,7 @@
       <h3><a class="pages" href="./pages/about.html">about</a></h3>
       <h3><a class="pages" href="./pages/work.html">work</a></h3>
       <h3><a class="pages" href="./pages/writing.html">writing</a></h3>
-      <h3><a class="pages" href="./pages/contact.html">skillset</a></h3>
+      <h3><a class="pages" href="./pages/skills.html">skillset</a></h3>
       <h3><a class="pages" href="./pages/contact.html">contact</a></h3>
     </div>
   </nav>
@@ -56,10 +56,10 @@
       <h1>i’m <a href="./pages/about.html"><span>matt</span></a>,<br>a full-stack web-dev.</h1>
       <p>
         < i love 
-        <span><a href="./pages/about.html">clean designs</a></span>
-        and 
-        <span><a href="./pages/about.html">building beautiful places</a></span>
-        ></p>
+        <span><a href="./pages/skills.html">clean designs</a></span>
+        and building
+        <span><a href="./pages/work.html">beautiful</a></span>
+         places ></p>
     </section>
   </main>
 
@@ -154,20 +154,22 @@
 
       var nav = document.getElementById("nav-links");
       var main = document.getElementsByTagName("main");
+      var footer = document.getElementsByTagName("footer");
       var blob = document.getElementsByClassName("blobs");
-      console.log(blob);
 
-      // Make background blurred
+      // Make background blurred and animate navigation on
       if (counter === 0) {
         nav.style.opacity = "1";
         nav.style.transform = "translateX(0em)";
         main[0].style.filter = "blur(6px) opacity(15%)";
+        footer[0].style.filter = "blur(6px) opacity(15%)";
         blob[0].style.filter = "blur(6px) opacity(15%)";
         counter++;
       } else {
         nav.style.opacity = "0";
         nav.style.transform = "translateX(-10em)";
         main[0].style.filter = "blur(0px) opacity(100%)";
+        footer[0].style.filter = "blur(0px) opacity(100%)";
         blob[0].style.filter = "blur(0px) opacity(100%)";
         counter--;
       }

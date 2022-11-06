@@ -95,8 +95,8 @@ body {
     width: 100%;
     position: absolute;
     mix-blend-mode: multiply;
-    top: 50vh;
-    left: 70vw;
+    top: 40vh;
+    left: 60vw;
     translate: -50% -50%;
     transform: scale(2);
   }
@@ -128,6 +128,7 @@ footer {
   position: fixed;
   width: 100%;
   margin-bottom: 20px;
+  transition: filter 300ms ease-in-out;
 }
 footer .socials-container {
   display: flex;
@@ -158,6 +159,17 @@ footer .socials-container .socials-content {
   footer .socials-container .socials-content {
     height: 200px;
     flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  footer {
+    margin-bottom: 20px;
+  }
+  footer .socials-container .socials-content {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: row;
   }
 }
 header {
@@ -220,7 +232,7 @@ nav #nav-links {
   font-size: 15vw;
   opacity: 0;
   transform: translateX(-10em);
-  transition: all 300ms ease-in-out;
+  transition: all 200ms ease-in-out;
   translate: 0px 20px;
 }
 nav #nav-links h3 {
@@ -230,6 +242,7 @@ nav #nav-links h3 {
   transition: all 200ms ease-in-out;
 }
 nav #nav-links h3:hover {
+  color: rgb(22, 8, 54);
   transition: all 200ms ease-in-out;
   translate: 20px;
 }
@@ -312,6 +325,7 @@ main section h1 a span:hover {
   color: rgb(22, 8, 54);
 }
 main section p {
+  line-height: 1.2;
   width: 90%;
   font-size: 0.7em;
   text-align: end;
@@ -323,17 +337,40 @@ main section p span {
 main section p span:hover {
   color: rgb(22, 8, 54);
 }
-main section p span:nth-child(1) {
-  -webkit-animation: move 3s backwards infinite;
-          animation: move 3s backwards infinite;
-}
-main section p span:nth-child(2) {
-  -webkit-animation: move 2s forwards infinite;
-          animation: move 2s forwards infinite;
-}
 
 @media only screen and (min-width: 600px) {
   main {
     font-size: 1.5em;
+  }
+  main section {
+    max-width: 800px;
+    height: 70%;
+  }
+  main section h1 {
+    width: 550px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  main {
+    font-size: 1.5em;
+  }
+  main section {
+    margin-top: 50px;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 90%;
+    height: 80%;
+  }
+  main section h1 {
+    padding-top: 10px;
+    width: 450px;
+  }
+  main section p {
+    align-self: end;
+    font-size: 0.65em;
+    float: right;
+    width: 420px;
+    padding-top: 50px;
+    padding: 0;
   }
 }/*# sourceMappingURL=main.css.map */
