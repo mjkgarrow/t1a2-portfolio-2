@@ -10,10 +10,13 @@
   <title>Template</title>
 </head>
 <body>
+
+  <!-- Header logo -->
   <header>
       <p><a href="./index.html">matt</a></p>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <div class="button-container">
       <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="blobSvg">
@@ -47,24 +50,30 @@
     </div>
   </nav>
 
-  
+  <!-- Main section -->
   <main>
+    <section>
+      <h1>
+        i’m matt, a full-stack web-dev.
+      </h1>
+      <p>
+        i love clean designs and building beautiful places.
+      </p>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="find-me">
-    <div>
+    <div class="socials-container">
       <div>
-        <div class="socials-container">
-          <div>
-            <span class="links"><a href="https://www.linkedin.com/in/matt-garrow-460295255/"><i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i></a></span>
-            <span class="links"><a href="https://instagram.com"><i class="fa-brands fa-instagram fa-2xl" aria-hidden="true"></i></a></span>
-            <span class="links"><a href="https://github.com/mjkgarrow"><i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i></a></span>
-          </div>
-        </div>
+        <a href="https://www.linkedin.com/in/matt-garrow-460295255/"><i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram fa-2xl" aria-hidden="true"></i></a>
+        <a href="https://github.com/mjkgarrow"><i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i></a>
       </div>
     </div>
   </footer>
 
+  <!-- Animated background -->
   <div class="blobs">
     <div class="blob">
       <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="blobSvg">
@@ -138,7 +147,7 @@
   </div>
 
   <script>
-    // Menu script
+    // Navigation script
     var counter = 0;
     function clickFunction() {
 
@@ -147,18 +156,18 @@
       var blob = document.getElementsByClassName("blobs");
       console.log(blob);
 
-
+      // Make background blurred
       if (counter === 0) {
         nav.style.opacity = "1";
         nav.style.transform = "translateX(0em)";
-        main[0].style.filter = "blur(6px)";
-        blob[0].style.filter = "blur(6px)";
+        main[0].style.filter = "blur(6px) opacity(25%)";
+        blob[0].style.filter = "blur(6px) opacity(25%)";
         counter++;
       } else {
         nav.style.opacity = "0";
         nav.style.transform = "translateX(-10em)";
-        main[0].style.filter = "blur(0px)";
-        blob[0].style.filter = "blur(0px)";
+        main[0].style.filter = "blur(0px) opacity(100%)";
+        blob[0].style.filter = "blur(0px) opacity(100%)";
         counter--;
       }
     }
