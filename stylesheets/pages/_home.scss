@@ -3,10 +3,7 @@
 @import '../components/mixins';
 
 main {
-  // color: $layer-5;
-  line-height: 1;
   section {
-    @include flex-center;
     h1 {
       flex: 2;
       a {
@@ -39,10 +36,7 @@ main {
 // For tablet
 @media only screen and (min-width: 600px) {
   main {
-    font-size: 1.5em;
     section {
-      max-width: 800px;
-      height: 70%;
       h1 {
         align-self: flex-start;
         width: 550px;
@@ -57,7 +51,6 @@ main {
 // For desktop
 @media only screen and (min-width: 1000px) {
   main {
-    font-size: 1.5em;
     section {
       margin-top: 50px;
       align-items: flex-start;

@@ -1,0 +1,90 @@
+@import '../default/colours';
+@import '../components/animation';
+@import '../components/mixins';
+
+main {
+  line-height: 1.2;
+  .about-section {
+    justify-content: space-evenly;
+    height: 85%;
+    div {
+      h1 {
+        text-shadow: 10px 10px $layer-5;
+        // animation: shadow-move 5s ease-in-out infinite;
+      }
+      .about-img {
+        display: none;
+        position: absolute;
+        margin: 20px;
+        max-width: 200px;
+        width: 50%;
+        border-radius: 50%;
+        filter: grayscale(1);
+        box-shadow: 5px 10px $layer-5;
+        transition: all 300ms ease-in-out;
+      }
+      .about-img:hover {
+        box-shadow: 0px 0px $layer-5;
+        filter: grayscale(0);
+      }
+    }
+    p {
+      line-height: 1;
+      color: $layer-5;
+      text-align: left;
+      a {
+        background-color: white;
+        border-radius: 10px;
+        color: $layer-5;
+        &:hover {
+          background-color: $layer-5;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
+// For tablet
+@media only screen and (min-width: 600px) {
+  main {
+    .about-section {
+      height: 70%;
+      div{
+        align-self: baseline;
+        h1 {
+          flex: 0;
+        }
+      }
+
+      p {
+        align-self: flex-start;
+        text-align: start;
+      }
+      p:nth-child(odd) {
+        text-align: start;
+      }
+    }
+  }
+}
+
+// For desktop
+@media only screen and (min-width: 1000px) {
+  main {
+    .about-section {
+      div {
+        h1 {
+  
+        }
+        .about-img {
+          display: block;
+        }
+      }
+      p {
+        align-self: flex-end;
+        width: 70%;
+      }
+    }
+  }
+}

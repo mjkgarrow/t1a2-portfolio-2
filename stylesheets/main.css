@@ -323,18 +323,25 @@ main {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  line-height: 1;
   height: 100vh;
   width: 100vw;
   transition: filter 300ms ease-in-out;
-  margin: 50px 0 50px 0;
 }
 main section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   height: 80%;
   padding: 20px;
   max-width: 600px;
 }
 
 @media only screen and (min-width: 600px) {
+  main {
+    font-size: 1.5em;
+  }
   main section {
     max-width: 800px;
     height: 70%;
@@ -350,15 +357,6 @@ main section {
   100% {
     transform: scale(1) translateY(0);
   }
-}
-main {
-  line-height: 1;
-}
-main section {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
 }
 main section h1 {
   flex: 2;
@@ -386,13 +384,6 @@ main section p span:hover {
 }
 
 @media only screen and (min-width: 600px) {
-  main {
-    font-size: 1.5em;
-  }
-  main section {
-    max-width: 800px;
-    height: 70%;
-  }
   main section h1 {
     align-self: flex-start;
     width: 550px;
@@ -402,9 +393,6 @@ main section p span:hover {
   }
 }
 @media only screen and (min-width: 1000px) {
-  main {
-    font-size: 1.5em;
-  }
   main section {
     margin-top: 50px;
     align-items: flex-start;
@@ -426,5 +414,83 @@ main section p span:hover {
     width: 420px;
     padding-top: 50px;
     padding: 0;
+  }
+}
+@keyframes move {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.01) translateY(-5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+main {
+  line-height: 1.2;
+}
+main .about-section {
+  justify-content: space-evenly;
+  height: 85%;
+}
+main .about-section div h1 {
+  text-shadow: 10px 10px rgb(22, 8, 54);
+}
+main .about-section div .about-img {
+  display: none;
+  position: absolute;
+  margin: 20px;
+  max-width: 200px;
+  width: 50%;
+  border-radius: 50%;
+  filter: grayscale(1);
+  box-shadow: 5px 10px rgb(22, 8, 54);
+  transition: all 300ms ease-in-out;
+}
+main .about-section div .about-img:hover {
+  box-shadow: 0px 0px rgb(22, 8, 54);
+  filter: grayscale(0);
+}
+main .about-section p {
+  line-height: 1;
+  color: rgb(22, 8, 54);
+  text-align: left;
+}
+main .about-section p a {
+  background-color: white;
+  border-radius: 10px;
+  color: rgb(22, 8, 54);
+}
+main .about-section p a:hover {
+  background-color: rgb(22, 8, 54);
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  main .about-section {
+    height: 70%;
+  }
+  main .about-section div {
+    align-self: baseline;
+  }
+  main .about-section div h1 {
+    flex: 0;
+  }
+  main .about-section p {
+    align-self: flex-start;
+    text-align: start;
+  }
+  main .about-section p:nth-child(odd) {
+    text-align: start;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  main .about-section div .about-img {
+    display: block;
+  }
+  main .about-section p {
+    align-self: flex-end;
+    width: 70%;
   }
 }/*# sourceMappingURL=main.css.map */
