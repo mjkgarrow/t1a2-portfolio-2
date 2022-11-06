@@ -11,18 +11,18 @@ nav {
     svg {
       transform: scale(2);
       width: 100%;
-      transition: all 300ms ease-in-out;
+      transition: fill 300ms ease-in-out;
       g {
         path {
           cursor: pointer;
           fill: $layer-2;
-          transition: all 300ms ease-in-out;
+          transition: fill 300ms ease-in-out;
           &:hover {
-            transition: all 300ms ease-in-out;
+            transition: fill 300ms ease-in-out;
             fill: $layer-3;
           }
           &:active {
-            transition: all 2ms ease-in-out;
+            transition: fill 2ms ease-in-out;
             fill: $layer-4;
           }
         }
