@@ -50,10 +50,8 @@ main {
 @media only screen and (min-width: 600px) {
   main {
     .about-section {
-      margin-bottom: 20%;
       height: 70%;
       div{
-        flex: 0.3;
         align-self: baseline;
         h1 {
           flex: 0;
@@ -75,7 +73,6 @@ main {
 @media only screen and (min-width: 1000px) {
   main {
     .about-section {
-      margin-bottom: 0;
       div {
         .about-img {
           display: block;
