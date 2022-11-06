@@ -45,3 +45,34 @@ nav {
     }
   }
 }
+// For tablet
+@media only screen and (min-width: 600px) {
+  nav {
+    top: 40px;
+    left: 40px;
+    .button-container {
+      svg {
+        transform: scale(3.5);
+      }
+    }
+    #nav-links {
+      font-size: 10vh;
+    }
+  }
+}
+
+// For desktop
+@media only screen and (min-width: 1000px) {
+  nav {
+    top: 45px;
+    left: 45px;
+    .button-container {
+      svg {
+        transform: scale(2.8);
+      }
+    }
+    #nav-links {
+      font-size: 10vh;
+    }
+  }
+}

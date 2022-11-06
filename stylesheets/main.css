@@ -216,6 +216,30 @@ nav #nav-links h3:hover {
   translate: 20px;
 }
 
+@media only screen and (min-width: 600px) {
+  nav {
+    top: 40px;
+    left: 40px;
+  }
+  nav .button-container svg {
+    transform: scale(3.5);
+  }
+  nav #nav-links {
+    font-size: 10vh;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  nav {
+    top: 45px;
+    left: 45px;
+  }
+  nav .button-container svg {
+    transform: scale(2.8);
+  }
+  nav #nav-links {
+    font-size: 10vh;
+  }
+}
 main {
   display: flex;
   flex-flow: column wrap;
