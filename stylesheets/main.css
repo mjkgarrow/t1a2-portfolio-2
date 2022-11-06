@@ -63,10 +63,10 @@ body {
   width: 100%;
   position: absolute;
   mix-blend-mode: multiply;
-  top: 50vh;
+  top: 53vh;
   left: 42vw;
   translate: -50% -50%;
-  transform: scale(2);
+  transform: scale(1.5);
 }
 .blobs div:nth-child(1) svg g path {
   fill: rgb(244, 134, 104);
@@ -253,7 +253,7 @@ main {
 main section {
   height: 80%;
   padding: 20px;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -272,6 +272,9 @@ main section {
     transform: scale(1) translateY(0);
   }
 }
+main {
+  line-height: 1;
+}
 main section {
   display: flex;
   flex-flow: column wrap;
@@ -280,7 +283,6 @@ main section {
 }
 main section h1 {
   flex: 2;
-  padding: 80px 0 0 0;
 }
 main section h1 a span {
   display: inline-block;
@@ -289,9 +291,9 @@ main section h1 a span {
 }
 main section p {
   width: 90%;
-  flex: 1;
   font-size: 0.7em;
   text-align: end;
+  padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 600px) {
