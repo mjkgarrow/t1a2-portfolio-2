@@ -11,9 +11,10 @@
     padding-bottom: 100px;
     width: 100%;
     .content-cards {
+      justify-content: flex-end;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      // justify-content: center;
       gap: 0.5em;
     }
   }
@@ -45,11 +46,8 @@
       padding-bottom: 0;
       width: fit-content;
       .content-cards {
+        margin-bottom: 100px;
         flex-flow: row wrap;
-        .card {
-          width: 350px;
-          font-size: 0.5em;
-        }
       }
     }
   }

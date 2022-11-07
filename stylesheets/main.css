@@ -481,7 +481,7 @@ main section div h1 {
 
 @media only screen and (min-width: 1000px) {
   .card {
-    width: 350px;
+    width: 320px;
     font-size: 0.5em;
   }
 }
@@ -678,9 +678,9 @@ main .about-section .text-body p a:hover {
   width: 100%;
 }
 .work-section .content-container .content-cards {
+  justify-content: flex-end;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 0.5em;
 }
 
@@ -713,10 +713,7 @@ main .about-section .text-body p a:hover {
     width: fit-content;
   }
   .work-section .content-container .content-cards {
+    margin-bottom: 100px;
     flex-flow: row wrap;
-  }
-  .work-section .content-container .content-cards .card {
-    width: 350px;
-    font-size: 0.5em;
   }
 }/*# sourceMappingURL=main.css.map */
