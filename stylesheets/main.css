@@ -371,48 +371,60 @@ main section div h1 {
     transform: scale(1) translateY(0);
   }
 }
-.content-container {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.work-section {
+  height: 80%;
+  padding: 40px;
+  justify-content: flex-start;
+  gap: 1em;
 }
-.content-container .content-cards .card {
-  cursor: pointer;
+.work-section .content-container {
+  width: 100%;
+}
+.work-section .content-container .content-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.work-section .content-container .content-cards .card {
+  max-width: 500px;
+  min-width: 250px;
   font-size: 0.8em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   border-radius: 10px;
   border: 1px solid white;
   overflow: hidden;
   transition: all 200ms ease-in-out;
 }
-.content-container .content-cards .card .top-part {
+.work-section .content-container .content-cards .card .top-part {
   height: 150px;
   position: relative;
 }
-.content-container .content-cards .card .top-part .tech {
+.work-section .content-container .content-cards .card .top-part .tech {
+  font-size: 0.7em;
   z-index: 1;
   opacity: 0;
   position: absolute;
   text-align: center;
-  padding: 0 0 0 10px;
+  padding: 0 0 5px 10px;
   bottom: 0;
   transition: all 200ms ease-in-out;
 }
-.content-container .content-cards .card .top-part .tech .icon-link i {
-  font-size: 0.7em;
+.work-section .content-container .content-cards .card .top-part .tech a {
+  display: inline-block;
+  transition: translate 50ms ease-in-out;
 }
-.content-container .content-cards .card .top-part .tech .icon-link:hover {
-  translate: 0 10px;
+.work-section .content-container .content-cards .card .top-part .tech a:hover {
+  translate: 0 -10px;
 }
-.content-container .content-cards .card .top-part .image-content {
+.work-section .content-container .content-cards .card .top-part .image-content {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.content-container .content-cards .card .top-part .image-content img {
+.work-section .content-container .content-cards .card .top-part .image-content img {
+  transform: scale(1.4);
+  -o-object-position: -16px -68px;
+     object-position: -16px -68px;
   transition: all 200ms ease-in-out;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -421,23 +433,130 @@ main section div h1 {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.content-container .content-cards .card .bottom-part {
+.work-section .content-container .content-cards .card .top-part .image-content .boggle-pic {
+  -o-object-position: 50px -48px;
+     object-position: 50px -48px;
+}
+.work-section .content-container .content-cards .card .bottom-part {
+  background-color: rgba(221, 97, 74, 0.25);
   padding: 10px;
   border-top: 1px solid white;
   transition: all 200ms ease-in-out;
 }
-.content-container .content-cards .card:hover .bottom-part {
+.work-section .content-container .content-cards .card:hover .bottom-part {
   color: rgb(22, 8, 54);
 }
-.content-container .content-cards .card:hover .tech {
+.work-section .content-container .content-cards .card:hover .tech {
   opacity: 1;
-  color: rgb(22, 8, 54);
+  color: rgb(221, 97, 74);
 }
-.content-container .content-cards .card:hover .image-content > img {
+.work-section .content-container .content-cards .card:hover .image-content > img {
   filter: blur(5px);
-  transform: scale(1.1);
+}
+.work-section .content-container .content-cards .card:hover .bottom-part {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
+@media only screen and (min-width: 600px) {
+  .work-section .content-container .content-cards {
+    gap: 0.6em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .work-section {
+    height: 80%;
+    padding: 40px;
+    justify-content: flex-start;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 1em;
+  }
+  .work-section .content-container {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .work-section .content-container .content-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .work-section .content-container .content-cards .card {
+    max-width: 500px;
+    min-width: 250px;
+    font-size: 0.8em;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid white;
+    overflow: hidden;
+    transition: all 200ms ease-in-out;
+  }
+  .work-section .content-container .content-cards .card .top-part {
+    height: 150px;
+    position: relative;
+  }
+  .work-section .content-container .content-cards .card .top-part .tech {
+    font-size: 0.7em;
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    padding: 0 0 5px 10px;
+    bottom: 0;
+    transition: all 200ms ease-in-out;
+  }
+  .work-section .content-container .content-cards .card .top-part .tech a {
+    display: inline-block;
+    transition: translate 50ms ease-in-out;
+  }
+  .work-section .content-container .content-cards .card .top-part .tech a:hover {
+    translate: 0 -10px;
+  }
+  .work-section .content-container .content-cards .card .top-part .image-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .work-section .content-container .content-cards .card .top-part .image-content img {
+    transform: scale(1.4);
+    -o-object-position: -16px -68px;
+       object-position: -16px -68px;
+    transition: all 200ms ease-in-out;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .work-section .content-container .content-cards .card .top-part .image-content .boggle-pic {
+    -o-object-position: 50px -48px;
+       object-position: 50px -48px;
+  }
+  .work-section .content-container .content-cards .card .bottom-part {
+    background-color: rgba(221, 97, 74, 0.25);
+    padding: 10px;
+    border-top: 1px solid white;
+    transition: all 200ms ease-in-out;
+  }
+  .work-section .content-container .content-cards .card:hover .bottom-part {
+    color: rgb(22, 8, 54);
+  }
+  .work-section .content-container .content-cards .card:hover .tech {
+    opacity: 1;
+    color: rgb(221, 97, 74);
+  }
+  .work-section .content-container .content-cards .card:hover .image-content > img {
+    filter: blur(5px);
+  }
+  .work-section .content-container .content-cards .card:hover .bottom-part {
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+  }
+}
 @keyframes move {
   0% {
     transform: scale(1) translateY(0);
