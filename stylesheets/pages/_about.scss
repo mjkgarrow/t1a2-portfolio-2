@@ -7,14 +7,9 @@ main {
   .about-section {
     padding: 40px;
     justify-content: flex-start;
-    height: 85%;
+    height: fit-content;
     gap: 1em;
     .heading {
-      h1 {
-        width: fit-content;
-        text-shadow: 10px 10px $layer-5;
-        // animation: shadow-move 5s ease-in-out infinite;
-      }
       .about-img {
         display: none;
         margin: 20px;

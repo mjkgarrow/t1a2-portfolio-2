@@ -44,14 +44,14 @@
     <div id='nav-links'>
       <h3><a class="pages" href="./about.html">about</a></h3>
       <h3><a class="pages" href="./work.html">work</a></h3>
-      <h3><a class="pages" href="./writing.html">writing</a></h3>
       <h3><a class="pages" href="./skills.html">skillset</a></h3>
+      <h3><a class="pages" href="./writing.html">writing</a></h3>
       <h3><a class="pages" href="./contact.html">contact</a></h3>
     </div>
   </nav>
 
   <!-- Main section -->
-  <main>
+  <main class="about-main">
     <section class="about-section">
       <div class="heading">
         <h1>about</h1>
@@ -250,9 +250,9 @@
       } else {
         nav.style.opacity = "0";
         nav.style.transform = "translateX(-10em)";
-        main[0].style.filter = "blur(0px) opacity(100%)";
-        footer[0].style.filter = "blur(0px) opacity(100%)";
-        blob[0].style.filter = "blur(0px) opacity(100%)";
+        main[0].style.filter = "";
+        footer[0].style.filter = "";
+        blob[0].style.filter = "";
         counter--;
       }
     }

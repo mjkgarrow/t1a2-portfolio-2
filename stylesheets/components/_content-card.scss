@@ -1,0 +1,86 @@
+@import '../default/colours';
+@import '../components/animation';
+@import '../components/mixins';
+
+.content-container {
+  width: 100%;
+  height: fit-content;
+
+  .content-cards {
+
+    .card {
+      cursor: pointer;
+      font-size: 0.8em;
+      width: fit-content;
+      border-radius: 10px;
+      border: 1px solid white;
+      overflow: hidden;
+      transition: all 200ms ease-in-out;
+      .top-part {
+        height: 150px;
+        position: relative;
+        .tech {
+          z-index: 1;
+          opacity: 0;
+          position: absolute;
+          text-align: center;
+          padding: 0 0 0 10px;
+          bottom: 0;
+          transition: all 200ms ease-in-out;
+          .icon-link {
+            i {
+              font-size: 0.7em;
+            }
+            &:hover {
+              translate: 0 10px;
+            }
+          }
+        }
+        .image-content {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          img {
+            transition: all 200ms ease-in-out;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .bottom-part {
+        padding: 10px;
+        border-top: 1px solid white;
+        transition: all 200ms ease-in-out;
+      }
+
+
+      &:hover .bottom-part {
+        color: $layer-5;
+      }
+      &:hover .tech {
+        opacity: 1;
+        color: $layer-5;
+      }
+
+      &:hover .image-content>img {
+        filter: blur(5px);
+        transform: scale(1.1);
+      }
+
+
+    }
+  }
+}
+
+// For tablet
+@media only screen and (min-width: 600px) {
+
+}
+
+// For desktop
+@media only screen and (min-width: 1000px) {
+
+}

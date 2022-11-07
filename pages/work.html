@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" href="../stylesheets/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
   <script src="https://kit.fontawesome.com/000108bc04.js" crossorigin="anonymous"></script>
 
   <title>Template</title>
@@ -13,7 +14,7 @@
 
   <!-- Header logo -->
   <header>
-      <p><a href="./index.html">matt</a></p>
+      <p><a href="../index.html">matt</a></p>
   </header>
 
   <!-- Navigation -->
@@ -42,24 +43,110 @@
       </svg>  
     </div>
     <div id='nav-links'>
-      <h3><a class="pages" href="./pages/about.html">about</a></h3>
-      <h3><a class="pages" href="./pages/work.html">work</a></h3>
-      <h3><a class="pages" href="./pages/skills.html">skillset</a></h3>
-      <h3><a class="pages" href="./pages/writing.html">writing</a></h3>
-      <h3><a class="pages" href="./pages/contact.html">contact</a></h3>
+      <h3><a class="pages" href="./about.html">about</a></h3>
+      <h3><a class="pages" href="./work.html">work</a></h3>
+      <h3><a class="pages" href="./skills.html">skillset</a></h3>
+      <h3><a class="pages" href="./writing.html">writing</a></h3>
+      <h3><a class="pages" href="./contact.html">contact</a></h3>
     </div>
   </nav>
 
   <!-- Main section -->
-  <main class="home-main">
+  <main>
     <section>
-      <h1>i’m <a href="./pages/about.html"><span>matt</span></a>,<br>a full-stack web-dev.</h1>
-      <p>
-        < i love 
-        <span><a href="./pages/skills.html">clean designs</a></span>
-        and building
-        <span><a href="./pages/work.html">beautiful</a></span>
-         places ></p>
+      <div class="heading">
+        <h1>work</h1>
+      </div>
+      <!-- Project Section -->
+      <div class="content-container">  
+        <div class="content-cards">
+
+          <div class="card">
+            <div class="top-part">
+              <div class="tech">
+                <a class="icon-link" href="https://www.python.org/"><i class="devicon-python-plain"></i></a>
+                <a class="icon-link" href="https://www.sqlite.org/docs.html"><i class="devicon-sqlite-plain"></i></a>
+                <a class="icon-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i class="devicon-javascript-plain"></i></a>
+                <a class="icon-link" href="https://flask.palletsprojects.com/en/2.2.x/"><i class="devicon-flask-original"></i></a>
+                <a class="icon-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML"><i class="devicon-html5-plain"></i></a>
+                <a class="icon-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS"><i class="devicon-css3-plain"></i></a>
+                <a class="icon-link" href="https://code.visualstudio.com/"><i class="devicon-vscode-plain"></i></a>
+              </div>
+              <div class="image-content">
+                <img src="../images/whatsapp.png" alt="Whatsapp Chat Analyser image">
+              </div>
+            </div>
+            <div class="bottom-part">
+              <h4>Whatsapp Analyser</h4>
+            </div>
+          </div>
+
+          <!-- Project card -->
+          <!-- <div class="card">
+            <div>
+              <a class="github-link" href="https://github.com/mjkgarrow/Whatsapp-Chat-Analyser">
+                <div class="image-content">
+                  <img src="../images/whatsapp.png" alt="Whatsapp Chat Analyser image">
+                </div>
+                <div class="title-content">
+                  <h2>Whatsapp Analyser</h2>
+                  <p>Charts on your chat history</p>
+                </div>
+              </a>
+              <div class="icons">
+                <a class="icon-link" href="https://www.python.org/"><i class="devicon-python-plain"></i></a>
+                <a class="icon-link" href="https://www.sqlite.org/docs.html"><i class="devicon-sqlite-plain"></i></a>
+                <a class="icon-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i class="devicon-javascript-plain"></i></a>
+                <a class="icon-link" href="https://flask.palletsprojects.com/en/2.2.x/"><i class="devicon-flask-original"></i></a>
+                <a class="icon-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML"><i class="devicon-html5-plain"></i></a>
+                <a class="icon-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS"><i class="devicon-css3-plain"></i></a>
+                <a class="icon-link" href="https://code.visualstudio.com/"><i class="devicon-vscode-plain"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Project card -->
+          <!-- <div class="project-content">
+            <div>
+              <a class="github-link" href="https://github.com/mjkgarrow/boggle">
+                <div class="image-content">
+                  <img src="../images/boggle.png" alt="Boggle image">
+                </div>
+                <div class="title-content">
+                  <h2>Boggle</h2>
+                  <p>Weekend game project</p>
+                </div>
+              </a>
+              <div class="icons">
+                <a class="icon-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><i class="devicon-javascript-plain"></i></a>
+                <a class="icon-link" href="https://code.visualstudio.com/"><i class="devicon-vscode-plain"></i></a>
+                <a class="icon-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML"><i class="devicon-html5-plain"></i></a>
+                <a class="icon-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS"><i class="devicon-css3-plain"></i></a>
+              </div>
+            </div>
+          </div> -->
+          
+          <!-- Project card -->
+          <!-- <div class="project-content">
+            <div>
+              <a class="github-link" href="https://github.com/mjkgarrow/game-of-life">
+                <div class="image-content">
+                  <img src="../images/gameoflife.png" alt="Game of life image">
+                </div>
+                <div class="title-content">
+                  <h2>Conway's Game of Life</h2>
+                  <p>Experimenting with PyGame</p>
+                </div>
+              </a>
+              <div class="icons">
+                <a class="icon-link" href="https://www.python.org/"><i class="devicon-python-plain"></i></a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+        
+        
     </section>
   </main>
 

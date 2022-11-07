@@ -2,6 +2,7 @@
 @import '../components/mixins';
 
 main {
+  height: 100%;
   @include flex-center;
   line-height: 1;
   width: 100vw;
@@ -10,6 +11,12 @@ main {
     @include flex-center;
     height: 80%;
     padding: 50px;
+    div {
+      h1 {
+        width: fit-content;
+        text-shadow: 8px 8px $layer-5;
+      }
+    }
   }
 }
 
