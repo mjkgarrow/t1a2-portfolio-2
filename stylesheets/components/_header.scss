@@ -15,6 +15,11 @@ header {
   &:hover {
     color: white;
   }
+  p {
+    background-color: $layer-1;
+    border-radius: 25px;
+    padding: 0 22px;
+  }
 }
 
 // For tablet

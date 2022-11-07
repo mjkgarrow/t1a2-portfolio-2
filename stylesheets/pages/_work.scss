@@ -2,18 +2,47 @@
 @import '../components/animation';
 @import '../components/mixins';
 
-
+.work-section {
+  height: 80%;
+  padding: 40px;
+  justify-content: flex-start;
+  gap: 1em;
+  .content-container {
+    padding-bottom: 100px;
+    width: 100%;
+    .content-cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.5em;
+    }
+  }
+}
 
 // For tablet
 @media only screen and (min-width: 600px) {
-  main {
-
+  .content-container {
+    .content-cards {
+      gap: 0.6em;
+    }
   }
 }
 
 // For desktop
 @media only screen and (min-width: 1000px) {
-  main {
-
+  .work-section {
+    margin-top: 0;
+    justify-content: flex-start;
+    .content-container {
+      padding-bottom: 0;
+      width: fit-content;
+      .content-cards {
+        flex-flow: row wrap;
+        .card {
+          width: 350px;
+          font-size: 0.5em;
+        }
+      }
+    }
   }
 }

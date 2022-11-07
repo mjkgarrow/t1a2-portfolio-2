@@ -2,187 +2,87 @@
 @import '../components/animation';
 @import '../components/mixins';
 
-.work-section {
-  height: 80%;
-  padding: 40px;
-  justify-content: flex-start;
-  // height: fit-content;
-  gap: 1em;
-  .content-container {
-    width: 100%;
-    // height: fit-content;
-    .content-cards {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5em;
-      .card {
-        max-width: 500px;
-        min-width: 250px;
-        font-size: 0.8em;
-        width: 100%;
-        border-radius: 10px;
-        border: 1px solid white;
-        overflow: hidden;
-        transition: all 200ms ease-in-out;
-        .top-part {
-          height: 150px;
-          position: relative;
-          .tech {
-            font-size: 0.7em;
-            z-index: 1;
-            opacity: 0;
-            position: absolute;
-            text-align: center;
-            padding: 0 0 5px 10px;
-            bottom: 0;
-            transition: all 200ms ease-in-out;
-            a {
-              display: inline-block;
-              transition: translate 50ms ease-in-out;
-              &:hover {
-                translate: 0 -10px;
-              }
-            }
-          }
-          .image-content {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            img {
-              transform: scale(1.4);
-              object-position: -16px -68px;
-              transition: all 200ms ease-in-out;
-              border-top-left-radius: 10px;
-              border-top-right-radius: 10px;
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-            .boggle-pic {
-              object-position: 50px -48px;
-            }
-          }
-        }
-        .bottom-part {
-          background-color: rgba(221, 97, 74, 0.25);
-          padding: 10px;
-          border-top: 1px solid white;
-          transition: all 200ms ease-in-out;
-        }
-        &:hover .bottom-part {
-          color: $layer-5;
-        }
-        &:hover .tech {
-          opacity: 1;
-          color: $layer-1;
-        }
-        &:hover .image-content>img {
-          filter: blur(5px);
-          // transform: scale(1.3);
-        }
-        &:hover .bottom-part {
-          backdrop-filter: blur(3px);
+.card {
+  max-width: 500px;
+  min-width: 250px;
+  font-size: 0.8em;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid white;
+  overflow: hidden;
+  transition: all 200ms ease-in-out;
+  .top-part {
+    height: 150px;
+    position: relative;
+    .tech {
+      width: 100%;
+      font-size: 1em;
+      z-index: 1;
+      opacity: 0;
+      position: absolute;
+      text-align: center;
+      padding: 0 0 5px 10px;
+      bottom: 50%;
+      left: 50%;
+      translate: -50% 50%;
+      transition: all 200ms ease-in-out;
+      a {
+        display: inline-block;
+        transition: transform 50ms ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+          // translate: 0 -30%;
         }
       }
     }
+    .image-content {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      img {
+        transform: scale(1.4);
+        object-position: -16px -68px;
+        transition: all 200ms ease-in-out;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .bottom-part {
+    background-color: rgba(221, 97, 74, 0.25);
+    padding: 10px;
+    border-top: 1px solid white;
+    transition: all 200ms ease-in-out;
+  }
+  &:hover .bottom-part {
+    color: $layer-5;
+  }
+  &:hover .tech {
+    opacity: 1;
+    color: $layer-1;
+  }
+  &:hover .image-content>img {
+    filter: blur(5px);
+    // transform: scale(1.3);
+  }
+  &:hover .bottom-part {
+    backdrop-filter: blur(3px);
   }
 }
 
+
+// For tablet
 @media only screen and (min-width: 600px) {
-  .work-section {
-    .content-container {
-      .content-cards {
-        gap: 0.6em;
-      }
-    }
-  }
+
 }
 
 // For desktop
 @media only screen and (min-width: 1000px) {
-  .work-section {
-    height: 80%;
-    padding: 40px;
-    justify-content: flex-start;
-    height: fit-content;
-    gap: 1em;
-    .content-container {
-      width: 100%;
-      height: fit-content;
-      .content-cards {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
-        .card {
-          max-width: 500px;
-          min-width: 250px;
-          font-size: 0.8em;
-          width: 100%;
-          border-radius: 10px;
-          border: 1px solid white;
-          overflow: hidden;
-          transition: all 200ms ease-in-out;
-          .top-part {
-            height: 150px;
-            position: relative;
-            .tech {
-              font-size: 0.7em;
-              z-index: 1;
-              opacity: 0;
-              position: absolute;
-              text-align: center;
-              padding: 0 0 5px 10px;
-              bottom: 0;
-              transition: all 200ms ease-in-out;
-              a {
-                display: inline-block;
-                transition: translate 50ms ease-in-out;
-                &:hover {
-                  translate: 0 -10px;
-                }
-              }
-            }
-            .image-content {
-              width: 100%;
-              height: 100%;
-              overflow: hidden;
-              img {
-                transform: scale(1.4);
-                object-position: -16px -68px;
-                transition: all 200ms ease-in-out;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-              }
-              .boggle-pic {
-                object-position: 50px -48px;
-              }
-            }
-          }
-          .bottom-part {
-            background-color: rgba(221, 97, 74, 0.25);
-            padding: 10px;
-            border-top: 1px solid white;
-            transition: all 200ms ease-in-out;
-          }
-          &:hover .bottom-part {
-            color: $layer-5;
-          }
-          &:hover .tech {
-            opacity: 1;
-            color: $layer-1;
-          }
-          &:hover .image-content>img {
-            filter: blur(5px);
-            // transform: scale(1.3);
-          }
-          &:hover .bottom-part {
-            backdrop-filter: blur(3px);
-          }
-        }
-      }
-    }
+  .card {
+    width: 350px;
+    font-size: 0.5em;
   }
 }

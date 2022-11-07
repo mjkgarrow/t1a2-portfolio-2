@@ -11,8 +11,11 @@ footer {
     align-content: center;
     align-items: center;
     justify-content: center;
-    font-size: 0.5em;
+    font-size: 0.45em;
     .socials-content {
+      background-color: $layer-1;
+      border-radius: 25px;
+      padding: 15px 10px;
       display: flex;
       justify-content: space-evenly;
       width: 150px;
@@ -35,6 +38,7 @@ footer {
       margin-left: 30px;
       width: fit-content;
       .socials-content {
+        background-color: transparent;
         height: 200px;
         flex-direction: column;
       }
@@ -48,6 +52,9 @@ footer {
     margin-bottom: 20px;
     .socials-container {
       .socials-content {
+        background-color: $layer-1;
+        border-radius: 25px;
+        padding: 15px 10px;
         height: fit-content;
         flex-direction: row;
       }
