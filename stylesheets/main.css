@@ -8,6 +8,8 @@
 	and the HTML5 Boilerplate	:: http://html5boilerplate.com
 -------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -39,7 +41,7 @@ a, a:visited, a:hover, a:active {
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Ultra", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2em;
   padding: 0;
   margin: 0;
@@ -221,6 +223,7 @@ footer .socials-container .socials-content a:hover {
   }
 }
 header {
+  font-family: "Ultra", serif;
   color: rgb(22, 8, 54);
   transition: color 200ms ease-in-out;
   z-index: 1;
@@ -316,7 +319,7 @@ nav #nav-links h3:hover {
     transform: scale(2.8);
   }
   nav #nav-links {
-    font-size: 10vh;
+    font-size: 8vh;
   }
 }
 main {
@@ -335,7 +338,7 @@ main section {
   justify-content: center;
   align-items: center;
   height: 80%;
-  padding: 20px;
+  padding: 50px;
   max-width: 600px;
 }
 
@@ -365,6 +368,7 @@ main section {
   }
 }
 main section h1 {
+  align-self: baseline;
   flex: 2;
 }
 main section h1 a span {
@@ -436,13 +440,18 @@ main {
   line-height: 1.2;
 }
 main .about-section {
-  justify-content: space-evenly;
+  padding: 40px;
+  justify-content: flex-start;
   height: 85%;
+  gap: 1em;
 }
-main .about-section div h1 {
+main .about-section .heading h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-shadow: 10px 10px rgb(22, 8, 54);
 }
-main .about-section div .about-img {
+main .about-section .heading .about-img {
   display: none;
   position: absolute;
   margin: 20px;
@@ -453,42 +462,52 @@ main .about-section div .about-img {
   box-shadow: 5px 10px rgb(22, 8, 54);
   transition: all 300ms ease-in-out;
 }
-main .about-section div .about-img:hover {
+main .about-section .heading .about-img:hover {
   box-shadow: 0px 0px rgb(22, 8, 54);
   filter: grayscale(0);
 }
-main .about-section p {
-  line-height: 1;
+main .about-section .text-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+main .about-section .text-body p {
+  width: 100%;
   color: rgb(22, 8, 54);
   text-align: left;
 }
-main .about-section p a {
+main .about-section .text-body p a {
   background-color: white;
   border-radius: 10px;
   color: rgb(22, 8, 54);
+  padding: 0px 10px;
 }
-main .about-section p a:hover {
+main .about-section .text-body p a:hover {
   background-color: rgb(22, 8, 54);
   color: white;
 }
 
 @media only screen and (min-width: 600px) {
   main .about-section {
-    margin-bottom: 20%;
+    padding: 50px 50px 50px 80px;
+    margin-bottom: min(20%, 50px);
     height: 70%;
   }
-  main .about-section div {
-    flex: 0.3;
+  main .about-section .heading {
     align-self: baseline;
   }
-  main .about-section div h1 {
+  main .about-section .heading h1 {
     flex: 0;
   }
-  main .about-section p {
+  main .about-section .text-body {
+    font-size: 1.2em;
+  }
+  main .about-section .text-body p {
     align-self: flex-start;
     text-align: start;
   }
-  main .about-section p:nth-child(odd) {
+  main .about-section .text-body p:nth-child(odd) {
     text-align: start;
   }
 }
@@ -496,10 +515,11 @@ main .about-section p a:hover {
   main .about-section {
     margin-bottom: 0;
   }
-  main .about-section div .about-img {
+  main .about-section .heading .about-img {
     display: block;
+    max-width: 150px;
   }
-  main .about-section p {
+  main .about-section .text-body p {
     align-self: flex-end;
     width: 70%;
   }

@@ -1,6 +1,8 @@
 @import '../default/colours';
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 
 header {
+  font-family: "Ultra", serif;
   color: $layer-5;
   transition: color 200ms ease-in-out;
   z-index: 1;

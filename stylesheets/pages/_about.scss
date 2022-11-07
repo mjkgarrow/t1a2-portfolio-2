@@ -5,10 +5,13 @@
 main {
   line-height: 1.2;
   .about-section {
-    justify-content: space-evenly;
+    padding: 40px;
+    justify-content: flex-start;
     height: 85%;
-    div {
+    gap: 1em;
+    .heading {
       h1 {
+        width: fit-content;
         text-shadow: 10px 10px $layer-5;
         // animation: shadow-move 5s ease-in-out infinite;
       }
@@ -28,17 +31,24 @@ main {
         filter: grayscale(0);
       }
     }
-    p {
-      line-height: 1;
-      color: $layer-5;
-      text-align: left;
-      a {
-        background-color: white;
-        border-radius: 10px;
+    .text-body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-around;
+      p {
+        width: 100%;
         color: $layer-5;
-        &:hover {
-          background-color: $layer-5;
-          color: white;
+        text-align: left;
+        a {
+          background-color: white;
+          border-radius: 10px;
+          color: $layer-5;
+          padding: 0px 10px;
+          &:hover {
+            background-color: $layer-5;
+            color: white;
+          }
         }
       }
     }
@@ -50,22 +60,24 @@ main {
 @media only screen and (min-width: 600px) {
   main {
     .about-section {
-      margin-bottom: 20%;
+      padding: 50px 50px 50px 80px;
+      margin-bottom: min(20%, 50px);
       height: 70%;
-      div{
-        flex: 0.3;
+      .heading {
         align-self: baseline;
         h1 {
           flex: 0;
         }
       }
-
-      p {
-        align-self: flex-start;
-        text-align: start;
-      }
-      p:nth-child(odd) {
-        text-align: start;
+      .text-body {
+        font-size: 1.2em;
+        p {
+          align-self: flex-start;
+          text-align: start;
+        }
+        p:nth-child(odd) {
+          text-align: start;
+        }
       }
     }
   }
@@ -76,14 +88,17 @@ main {
   main {
     .about-section {
       margin-bottom: 0;
-      div {
+      .heading {
         .about-img {
           display: block;
+          max-width: 150px;
         }
       }
-      p {
-        align-self: flex-end;
-        width: 70%;
+      .text-body {
+        p {
+          align-self: flex-end;
+          width: 70%;
+        }
       }
     }
   }

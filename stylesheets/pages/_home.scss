@@ -5,6 +5,8 @@
 main {
   section {
     h1 {
+      align-self: baseline;
+      // width: 400px;
       flex: 2;
       a {
         span {
