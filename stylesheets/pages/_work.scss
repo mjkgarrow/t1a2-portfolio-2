@@ -21,9 +21,17 @@
 
 // For tablet
 @media only screen and (min-width: 600px) {
-  .content-container {
-    .content-cards {
-      gap: 0.6em;
+  .work-section {
+    width: 80%;
+    align-items: center;
+    .heading {
+      align-self: baseline;
+    }
+    .content-container {
+      width: fit-content;
+      .content-cards {
+        gap: 0.6em;
+      }
     }
   }
 }

@@ -58,7 +58,6 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 .blobs .blob {
   max-width: 700px;
@@ -70,14 +69,21 @@ body {
   translate: -50% -50%;
   transform: scale(1.5);
 }
+.blobs div:nth-child(1) {
+  translate: -60% -70%;
+}
 .blobs div:nth-child(1) svg g path {
   fill: rgb(244, 134, 104);
+}
+.blobs div:nth-child(2) {
+  translate: -50% -20%;
 }
 .blobs div:nth-child(2) svg g path {
   fill: rgb(244, 166, 152);
 }
 .blobs div:nth-child(3) {
   mix-blend-mode: overlay;
+  translate: -30% -80%;
 }
 .blobs div:nth-child(3) svg g path {
   fill: rgb(217, 217, 217);
@@ -128,17 +134,35 @@ body {
     translate: -50% -50%;
     transform: scale(2);
   }
+  .blobs .blob div:nth-child(1) {
+    translate: -80% -80%;
+  }
+  .blobs .blob div:nth-child(2) {
+    translate: -50% -20%;
+  }
+  .blobs .blob div:nth-child(3) {
+    translate: -20% -80%;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .blobs .blob {
     max-width: 500px;
-    width: 100%;
+    width: 30%;
     position: absolute;
     mix-blend-mode: multiply;
     top: 40vh;
     left: 60vw;
     translate: -50% -50%;
     transform: scale(2);
+  }
+  .blobs .blob div:nth-child(1) {
+    translate: -80% -80%;
+  }
+  .blobs .blob div:nth-child(2) {
+    translate: -50% -20%;
+  }
+  .blobs .blob div:nth-child(3) {
+    translate: -20% -80%;
   }
   .second-blobs {
     display: block;
@@ -399,7 +423,7 @@ main section div h1 {
 }
 .card .top-part .tech {
   width: 100%;
-  font-size: 1em;
+  font-size: 1.3em;
   z-index: 1;
   opacity: 0;
   position: absolute;
@@ -661,7 +685,19 @@ main .about-section .text-body p a:hover {
 }
 
 @media only screen and (min-width: 600px) {
-  .content-container .content-cards {
+  .work-section {
+    width: 80%;
+    align-items: center;
+  }
+  .work-section .heading {
+    align-self: baseline;
+  }
+  .work-section .content-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .work-section .content-container .content-cards {
     gap: 0.6em;
   }
 }
