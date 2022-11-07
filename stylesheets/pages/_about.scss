@@ -17,7 +17,6 @@ main {
       }
       .about-img {
         display: none;
-        position: absolute;
         margin: 20px;
         max-width: 200px;
         width: 50%;
@@ -60,9 +59,8 @@ main {
 @media only screen and (min-width: 600px) {
   main {
     .about-section {
-      padding: 50px 50px 50px 80px;
+      padding: 20px 20px 20px 80px;
       margin-bottom: min(20%, 50px);
-      height: 70%;
       .heading {
         align-self: baseline;
         h1 {
@@ -70,7 +68,7 @@ main {
         }
       }
       .text-body {
-        font-size: 1.2em;
+        gap: 0.2em;
         p {
           align-self: flex-start;
           text-align: start;
@@ -87,17 +85,20 @@ main {
 @media only screen and (min-width: 1000px) {
   main {
     .about-section {
+      flex-direction: row;
       margin-bottom: 0;
       .heading {
+        @include flex-center;
         .about-img {
+
           display: block;
           max-width: 150px;
         }
       }
       .text-body {
+        flex: 1;
         p {
           align-self: flex-end;
-          width: 70%;
         }
       }
     }
