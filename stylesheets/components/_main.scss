@@ -2,17 +2,18 @@
 @import '../components/mixins';
 
 main {
-  min-width: 400px;
   height: 100vh;
   @include flex-center;
   line-height: 1;
   width: 100vw;
   transition: filter 300ms ease-in-out;
   section {
+
     @include flex-center;
     height: 70%;
     padding: 50px;
     max-width: 1050px;
+    min-width: 300px;
     div {
       h1 {
         width: fit-content;

@@ -71,7 +71,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 1200px;
 }
 
 .blobs {
@@ -378,7 +377,6 @@ nav #nav-links h3:hover {
   }
 }
 main {
-  min-width: 400px;
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
@@ -396,6 +394,7 @@ main section {
   height: 70%;
   padding: 50px;
   max-width: 1050px;
+  min-width: 300px;
 }
 main section div h1 {
   width: -webkit-fit-content;
