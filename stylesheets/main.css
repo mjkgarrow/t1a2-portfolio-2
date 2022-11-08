@@ -1099,13 +1099,11 @@ main .about-section .text-body p a:hover {
   }
 }
 .contact-section {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  padding: 10px 20px 20px 20px;
 }
 .contact-section .contact-form {
   width: 90%;
+  font-size: 0.8em;
 }
 .contact-section .contact-form .form-container .form-content {
   display: flex;
