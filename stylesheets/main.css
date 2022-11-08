@@ -409,7 +409,7 @@ main section div h1 {
 .card {
   border-radius: 10px;
   border: 1px solid white;
-  max-width: 500px;
+  max-width: 300px;
   min-width: 250px;
   font-size: 0.8em;
   width: 100%;
@@ -441,6 +441,8 @@ main section div h1 {
   transform: scale(1.2);
 }
 .card .top-part .image-content {
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -456,6 +458,8 @@ main section div h1 {
      object-fit: cover;
 }
 .card .bottom-part {
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
   border-top: 1px solid white;
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
@@ -474,9 +478,8 @@ main section div h1 {
   filter: blur(3px) opacity(0.8) brightness(0.8);
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 600px) {
   .card {
-    width: 320px;
     font-size: 0.5em;
   }
 }

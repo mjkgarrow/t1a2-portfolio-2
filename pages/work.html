@@ -351,7 +351,8 @@
       var nav = document.getElementById("nav-links");
       var main = document.getElementsByTagName("main");
       var footer = document.getElementsByTagName("footer");
-      var blob = document.getElementsByClassName("blobs");
+      var blob1 = document.getElementsByClassName("blobs");
+      var blob2 = document.getElementsByClassName("second-blobs");
 
       // Make background blurred and animate navigation on
       if (counter === 0) {
@@ -359,18 +360,19 @@
         nav.style.transform = "translateX(0em)";
         main[0].style.filter = "blur(6px) opacity(15%)";
         footer[0].style.filter = "blur(6px) opacity(15%)";
-        blob[0].style.filter = "blur(6px) opacity(15%)";
+        blob1[0].style.filter = "blur(6px) opacity(15%)";
+        blob2[0].style.filter = "blur(6px) opacity(15%)";
         counter++;
       } else {
         nav.style.opacity = "0";
         nav.style.transform = "translateX(-10em)";
         main[0].style.filter = "";
         footer[0].style.filter = "";
-        blob[0].style.filter = "";
+        blob1[0].style.filter = "";
+        blob2[0].style.filter = "";
         counter--;
       }
     }
-
   </script>
 
 </body>
