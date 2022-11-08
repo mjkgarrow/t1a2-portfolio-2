@@ -1,0 +1,54 @@
+@import '../default/colours';
+@import '../components/animation';
+@import '../components/mixins';
+
+
+.blog-post-section {
+  width: 100%;
+  .post {
+    padding-bottom: 100px;
+    .post-container {
+      gap: 0.5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      .image-content {
+        display: none;
+      }
+      p {
+        width: 97%;
+        color: $layer-5;
+        font-size: 0.6em;
+        text-align: start;
+      }
+    }
+    .back {
+      text-shadow: 8px 8px $layer-5;
+      padding-top: 50px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+}
+
+// For tablet
+@media only screen and (min-width: 600px) {
+  .blog-post-section {
+    width: 90%;
+    .post {
+      .post-container {
+        p {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+// For desktop
+@media only screen and (min-width: 1000px) {
+  .blog-post-section {
+    width: 80%;
+  }
+}
