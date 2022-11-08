@@ -18,6 +18,7 @@
 }
 
 html {
+  overflow-x: hidden;
   height: 100vh;
   -webkit-tap-highlight-color: transparent;
 }
@@ -37,6 +38,26 @@ p, h1, h2, h3, h4, h5, h6 {
 a, a:visited, a:hover, a:active {
   color: inherit;
   text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(244, 134, 104);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(22, 8, 54);
 }
 
 body {
@@ -357,7 +378,7 @@ nav #nav-links h3:hover {
   }
 }
 main {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
