@@ -29,6 +29,12 @@
       }
       .skill-icons {
         align-self: flex-end;
+        a {
+          transition: color 200ms ease-in-out;
+        }
+        a:hover {
+          color: white;
+        }
       }
     }
   }

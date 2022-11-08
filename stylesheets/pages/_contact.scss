@@ -1,0 +1,87 @@
+@import '../default/colours';
+@import '../components/animation';
+@import '../components/mixins';
+
+.contact-section {
+  width: 100%;
+  height: fit-content;
+  .contact-form {
+    width: 90%;
+    .form-container {
+      .form-content {
+        @include flex-center;
+        gap: 0.4em;
+        div {
+          opacity: 0;
+          font-size: 0.7em;
+          width: 100%;
+          label {
+            padding-left: 10px;
+            align-self: baseline;
+            margin-bottom: 10px;
+          }
+          input {
+            all: unset;
+            height: 2em;
+            width: 100%;
+            margin-top: 10px;
+            @include blur-border;
+    
+          }
+          textarea {
+            all: unset;
+            margin-top: 10px;
+            @include blur-border;
+            width: 100%;
+            min-height: 200px;
+          }
+        }
+        .button-container {
+          @include blur-border;
+          width: fit-content;
+          padding: 10px;
+          cursor: pointer;
+          transition: all 300ms ease-in-out;
+          .submit-button {
+            all: unset;
+          }
+        }
+        .button-container:hover, .button-container:active {
+          background-color: $layer-5;
+          color: $layer-1;
+        }  
+
+
+        div:nth-child(1) {
+          animation: fade-up 700ms forwards 300ms ease-in-out;
+        }
+        div:nth-child(2) {
+          animation: fade-up 700ms forwards 500ms ease-in-out;
+        }
+        div:nth-child(3) {
+          animation: fade-up 700ms forwards 700ms ease-in-out;
+        }
+        div:nth-child(4) {
+          animation: fade-up 700ms forwards 800ms ease-in-out;
+        }
+        div:nth-child(5) {
+          animation: fade-up 700ms forwards 900ms ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+
+// For tablet
+@media only screen and (min-width: 600px) {
+  .contact-form {
+    align-self: flex-end;
+    width: 70%;
+  }
+}
+
+// For desktop
+@media only screen and (min-width: 1000px) {
+
+}

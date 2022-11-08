@@ -30,7 +30,7 @@ nav {
     }
   }
   #nav-links {
-    font-size: 15vw;
+    font-size: min(15vw, 10vh);
     opacity: 0;
     transform: translateX(-10em);
     transition: all 200ms ease-in-out;
@@ -56,9 +56,6 @@ nav {
       svg {
         transform: scale(3.5);
       }
-    }
-    #nav-links {
-      font-size: 10vh;
     }
   }
 }
