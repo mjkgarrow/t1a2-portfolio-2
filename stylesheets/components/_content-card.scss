@@ -3,6 +3,7 @@
 @import '../components/mixins';
 
 .card {
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   border: 1px solid white;
   max-width: 500px;
@@ -39,8 +40,8 @@
       height: 100%;
       overflow: hidden;
       img {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        // border-top-left-radius: 10px;
+        // border-top-right-radius: 10px;
         transform: scale(1.4);
         object-position: -16px -68px;
         transition: all 200ms ease-in-out;
