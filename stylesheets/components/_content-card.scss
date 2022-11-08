@@ -3,12 +3,12 @@
 @import '../components/mixins';
 
 .card {
+  border-radius: 10px;
+  border: 1px solid white;
   max-width: 500px;
   min-width: 250px;
   font-size: 0.8em;
   width: 100%;
-  border-radius: 10px;
-  border: 1px solid white;
   overflow: hidden;
   transition: all 200ms ease-in-out;
   .top-part {
@@ -39,11 +39,11 @@
       height: 100%;
       overflow: hidden;
       img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         transform: scale(1.4);
         object-position: -16px -68px;
         transition: all 200ms ease-in-out;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -51,10 +51,10 @@
     }
   }
   .bottom-part {
+    border-top: 1px solid white;
     backdrop-filter: blur(3px);
     background-color: rgba(221, 97, 74, 0.25);
     padding: 10px;
-    border-top: 1px solid white;
     transition: all 200ms ease-in-out;
   }
   &:hover .bottom-part {
@@ -65,7 +65,7 @@
     color: $layer-1;
   }
   &:hover .image-content>img {
-    filter: blur(3px);
+    filter: blur(3px) opacity(0.8) brightness(0.8);
   }
 }
 
