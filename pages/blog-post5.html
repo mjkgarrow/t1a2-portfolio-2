@@ -5,17 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../stylesheets/main.css">
-  
+
   <!-- Icons from DevIcon https://devicon.dev/ -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
 
   <!-- Icons from Font Awesome https://fontawesome.com/ -->
   <script src="https://kit.fontawesome.com/000108bc04.js" crossorigin="anonymous"></script>
 
+  <!-- Highlighting styles from https://highlightjs.org/ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.6.0/styles/atom-one-dark.css">
+
   <title>Template</title>
 </head>
 <body>
-
   <!-- Animated background -->
   <div class="blobs">
     <div class="blob">
@@ -163,7 +165,7 @@
 
   <!-- Header logo -->
   <header>
-      <p><a href="../index.html">matt</a></p>
+    <p><a href="../index.html">matt</a></p>
   </header>
 
   <!-- Navigation -->
@@ -201,24 +203,85 @@
   </nav>
 
   <!-- Main section -->
-  <main class="about-main">
-    <section class="about-section">
+  <main>
+    <section class="work-section blog-post-section">
       <div class="heading">
-        <h1>about</h1>
-        <img class="about-img" src="../images/me.jpg" alt="Photo of Matt">
+        <h1>Data types</h1>
       </div>
-      <div class="text-body">
-        <p>After 11 years in broadcast media I’ve made the switch to <a href="./pages/skills.html">web development</a>.</p>
-  
-        <p>My passion is <a href="./pages/blog.html">telling stories</a> and engaging with the audience.</p>
-  
-        <p>I am mostly self-taught, <a href="./pages/project.html">learning</a> Python and SQL during the pandemic.</p>
-          
-        <p>Now I’ve formalised my training with a Diploma of Information Technology from <a href="https://www.coderacademy.edu.au/">Coder Academy</a>.
+
+    <!-- Blog post section -->
+    <article class="post">
+      <div class="post-container">
+        <div class="image-content">
+          <img src="../images/blog3.jpg" alt="Image of a dictionary">
+        </div>
+        <!-- Text -->
+        <p class="date">17 October 2022</p>
+        <p>
+          In programming languages, data are stored in <em>variables</em>. The kind of data a variable can store is called its <em>data type</em>. A data type dictates what kinds of values can be stored and what kinds of operations can be done on that data. Let's look a few examples of data types.
         </p>
+        <p>
+          Here is a 'str' data type - they are surrounded by single or double quotation marks. 'str' is short for 'string', ie: a string of characters. 'str' contain text data (which may include numbers, which shouldn't be confused with ints). 'str' can be printed as a literal - meaning it will print what is in the quote marks.
+        </p>
+        <div class="code-block">
+          <pre>
+            <code class="langugage-python">
+text = "Hello"
+print(text)
+>>> Hello
+            </code>
+          </pre>
+        </div>
+        <p>
+          'str' are iterable, you can loop through each character in a string. 
+        </p>
+        <div class="code-block">
+          <pre>
+            <code class="langugage-python">
+print(text[1])
+>>> e
+            </code>
+          </pre>
+        </div>
+        <p>
+          'str' can be concatenated, which means 'put together in a series'.
+        </p>
+        <div class="code-block">
+          <pre>
+            <code class="langugage-python">
+text1 = "Ma"
+text2 = "tt"
+print(text1 + text2)
+>>> e
+            </code>
+          </pre>
+        </div>
+        <p>
+          'Int' data type - they are numeric and a whole number, either positive or negative. 'Int' is short of 'integer'. Ints can do mathematical operations, eg: addition, subtraction, multiplication
+        </p>
+        <div class="code-block">
+          <pre>
+            <code class="langugage-python">
+num1 = 5
+num2 = 3
+num3 = 12351348619348234754
+num4 = -252345
+print(num1 + num2)
+>>> 8
+            </code>
+          </pre>
+        </div>
       </div>
-        
-        
+
+      <!-- Return to blog -->
+      <p class="back">
+        <a class="back-tag" href="./writing.html">
+          Back
+        </a>
+      </p>
+
+    </article>
+
     </section>
   </main>
 
@@ -233,7 +296,11 @@
     </div>
   </footer>
 
+
+  <!-- Code highlight script from https://highlightjs.org/ -->
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
   <script>
+    hljs.highlightAll();
     // Navigation script
     var counter = 0;
     function clickFunction() {
@@ -263,7 +330,12 @@
         counter--;
       }
     }
-  </script>
+
+    
+
+</script>
+
+<script></script>
 
 </body>
 </html>

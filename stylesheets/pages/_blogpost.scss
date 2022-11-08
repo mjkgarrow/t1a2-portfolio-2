@@ -6,6 +6,7 @@
 .blog-post-section {
   width: 100%;
   .post {
+    width: 100%;
     padding-bottom: 100px;
     .post-container {
       gap: 0.5em;
@@ -22,6 +23,15 @@
         font-size: 0.6em;
         text-align: start;
       }
+      .code-block {
+        width: fit-content;
+        font-size: 0.5em;
+        pre {
+          code {
+            border-radius: 10px;
+          }
+        }
+      }
     }
     .back {
       text-shadow: 8px 8px $layer-5;
@@ -30,6 +40,10 @@
       font-weight: bold;
     }
   }
+}
+
+.scaling {
+  transform: scale(0.7);
 }
 
 // For tablet
@@ -50,5 +64,11 @@
 @media only screen and (min-width: 1000px) {
   .blog-post-section {
     width: 80%;
+    max-width: 1000px;
+    .post-container {
+      .code-block {
+        transform: scale(1);
+      }
+    }
   }
 }

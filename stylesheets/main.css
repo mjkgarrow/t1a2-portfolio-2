@@ -705,7 +705,7 @@ main .about-section .text-body p a:hover {
 }
 .work-section .content-container .content-cards {
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -809,7 +809,7 @@ main .about-section .text-body p a:hover {
 
 @media only screen and (min-width: 600px) {
   .blog-post {
-    width: 375px;
+    width: 325px;
     max-width: unset;
   }
 }
@@ -828,6 +828,7 @@ main .about-section .text-body p a:hover {
   width: 100%;
 }
 .blog-post-section .post {
+  width: 100%;
   padding-bottom: 100px;
 }
 .blog-post-section .post .post-container {
@@ -846,11 +847,24 @@ main .about-section .text-body p a:hover {
   font-size: 0.6em;
   text-align: start;
 }
+.blog-post-section .post .post-container .code-block {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.5em;
+}
+.blog-post-section .post .post-container .code-block pre code {
+  border-radius: 10px;
+}
 .blog-post-section .post .back {
   text-shadow: 8px 8px rgb(22, 8, 54);
   padding-top: 50px;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.scaling {
+  transform: scale(0.7);
 }
 
 @media only screen and (min-width: 600px) {
@@ -864,5 +878,9 @@ main .about-section .text-body p a:hover {
 @media only screen and (min-width: 1000px) {
   .blog-post-section {
     width: 80%;
+    max-width: 1000px;
+  }
+  .blog-post-section .post-container .code-block {
+    transform: scale(1);
   }
 }/*# sourceMappingURL=main.css.map */

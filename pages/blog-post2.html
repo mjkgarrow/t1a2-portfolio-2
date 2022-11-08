@@ -5,17 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../stylesheets/main.css">
-  
+
   <!-- Icons from DevIcon https://devicon.dev/ -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
 
   <!-- Icons from Font Awesome https://fontawesome.com/ -->
   <script src="https://kit.fontawesome.com/000108bc04.js" crossorigin="anonymous"></script>
 
+  <!-- Highlighting styles from https://highlightjs.org/ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.6.0/styles/atom-one-dark.css">
+
   <title>Template</title>
 </head>
 <body>
-
   <!-- Animated background -->
   <div class="blobs">
     <div class="blob">
@@ -163,7 +165,7 @@
 
   <!-- Header logo -->
   <header>
-      <p><a href="../index.html">matt</a></p>
+    <p><a href="../index.html">matt</a></p>
   </header>
 
   <!-- Navigation -->
@@ -201,24 +203,69 @@
   </nav>
 
   <!-- Main section -->
-  <main class="about-main">
-    <section class="about-section">
+  <main>
+    <section class="work-section blog-post-section">
       <div class="heading">
-        <h1>about</h1>
-        <img class="about-img" src="../images/me.jpg" alt="Photo of Matt">
+        <h1>What is Python?</h1>
       </div>
-      <div class="text-body">
-        <p>After 11 years in broadcast media I’ve made the switch to <a href="./pages/skills.html">web development</a>.</p>
-  
-        <p>My passion is <a href="./pages/blog.html">telling stories</a> and engaging with the audience.</p>
-  
-        <p>I am mostly self-taught, <a href="./pages/project.html">learning</a> Python and SQL during the pandemic.</p>
-          
-        <p>Now I’ve formalised my training with a Diploma of Information Technology from <a href="https://www.coderacademy.edu.au/">Coder Academy</a>.
+
+    <!-- Blog post section -->
+    <article class="post">
+      <div class="post-container">
+        <div class="image-content">
+          <img src="../images/blog2.jpg" alt="Image of a python">
+        </div>
+        <!-- Text -->
+        <p class="date">5 November 2022</p>
+        <p>
+          Python is an easy-to-learn and easy-to-read object-oriented, high-level programming language with dynamic semantics. Dynamic semantics means that its variables can change datatypes and don't need to be statically defined. Eg:
+        </p>
+
+        <div class="code-block">
+          <pre>
+            <code class="langugage-python">
+int1 = 10
+
+int1 = int1 / 5
+
+print(type(int1))
+>>> &lt;class 'float'&gt; 
+              
+            </code>
+          </pre>
+        </div>
+
+        <p>
+          Because Python syntax is easy to read it is great for coding beginners - the code can almost be read in plain English or pseudo-code. Also the code does more with less, it has abstracted away many processes so that code can be shorter and faster to write. Eg:
+        </p>
+
+        <div class="code-block">
+          <pre>
+            <code class="langugage-python">
+for i in range(8):
+  print(i)
+>>> 0 1 2 3 4 5 6 7    
+            </code>
+          </pre>
+        </div>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam, in error ratione possimus voluptate! Laborum, culpa sint eaque laboriosam quaerat aspernatur ad, mollitia aut vel reiciendis hic facilis blanditiis quam expedita dicta. Nostrum odit suscipit odio voluptates unde accusamus, tempora dicta repellendus facere quod voluptas recusandae? Suscipit, error a!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam, in error ratione possimus voluptate! Laborum, culpa sint eaque laboriosam quaerat aspernatur ad, mollitia aut vel reiciendis hic facilis blanditiis quam expedita dicta. Nostrum odit suscipit odio voluptates unde accusamus, tempora dicta repellendus facere quod voluptas recusandae? Suscipit, error a!
         </p>
       </div>
-        
-        
+
+      <!-- Return to blog -->
+      <p class="back">
+        <a class="back-tag" href="./writing.html">
+          Back
+        </a>
+      </p>
+
+    </article>
+
     </section>
   </main>
 
@@ -233,7 +280,11 @@
     </div>
   </footer>
 
+
+  <!-- Code highlight script from https://highlightjs.org/ -->
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
   <script>
+    hljs.highlightAll();
     // Navigation script
     var counter = 0;
     function clickFunction() {
@@ -263,7 +314,12 @@
         counter--;
       }
     }
-  </script>
+
+    
+
+</script>
+
+<script></script>
 
 </body>
 </html>
