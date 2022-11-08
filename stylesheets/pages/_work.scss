@@ -7,6 +7,33 @@
   padding: 40px;
   justify-content: flex-start;
   gap: 1em;
+  .work-heading {
+    display: flex;
+    flex-direction: column;
+    .resume-download {
+      all: unset;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      width: fit-content;
+      font-size: 0.4em;
+      padding-top: 20px;
+      cursor: pointer;
+      .resume-buttom {
+        all: unset;
+        opacity: 0;
+        @include blur-border;
+        padding: 7px;
+        animation: fade-up 700ms forwards 200ms ease-in-out;
+      }
+    }
+    .resume-buttom:hover {
+      background-color: $layer-4;
+      color: $layer-5;
+      border: 1px solid $layer-4;
+    }
+  }
   .content-container {
     padding-bottom: 100px;
     width: 100%;
@@ -15,10 +42,10 @@
       justify-content: center;
       display: flex;
       flex-direction: column;
-      // justify-content: center;
       gap: 0.5em;
     }
   }
+
 }
 
 // For tablet
