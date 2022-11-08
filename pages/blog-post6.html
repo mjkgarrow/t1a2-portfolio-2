@@ -18,6 +18,112 @@
   <title>Template</title>
 </head>
 <body>
+
+  <!-- Header logo -->
+  <header>
+    <p><a href="../index.html">matt</a></p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="button-container">
+      <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="blobSvg">
+        <g transform="translate(173.3793182373047, 5.964118957519531)">
+          <path onclick="clickFunction()">
+            <animate attributeName="d"
+              dur="40s"
+              repeatCount="indefinite"
+  
+              values="M363,310Q346,370,278.5,394.5Q211,419,143,376.5Q75,334,105,264.5Q135,195,175,146.5Q215,98,300.5,89Q386,80,383,165Q380,250,363,310Z;
+              
+              M420,327Q372,404,284,446Q196,488,117,420Q38,352,72.5,266.5Q107,181,161.5,141.5Q216,102,264.5,136.5Q313,171,390.5,210.5Q468,250,420,327Z;
+              
+              M400.5,333.5Q383,417,300,405Q217,393,188,343.5Q159,294,106,224.5Q53,155,124,82Q195,9,284,52Q373,95,395.5,172.5Q418,250,400.5,333.5Z;
+  
+              M407.5,298.5Q328,347,262.5,414.5Q197,482,125.5,413.5Q54,345,94,269.5Q134,194,173.5,141Q213,88,287.5,98.5Q362,109,424.5,179.5Q487,250,407.5,298.5Z;
+  
+              M418.01303,337.00261Q388.25391,424.00521,303.06478,406.7513Q217.87565,389.49739,146.84439,361.88868Q75.81312,334.27996,102.93522,263.02866Q130.05732,191.77736,176.10126,159.05732Q222.14519,126.33728,303.70216,103.22561Q385.25912,80.11393,416.51563,165.05696Q447.77215,250,418.01303,337.00261Z;
+  
+              M363,310Q346,370,278.5,394.5Q211,419,143,376.5Q75,334,105,264.5Q135,195,175,146.5Q215,98,300.5,89Q386,80,383,165Q380,250,363,310Z"/>
+          </path>
+        </g>
+      </svg>  
+    </div>
+    <div id='nav-links'>
+      <h3><a class="pages" href="./about.html">about</a></h3>
+      <h3><a class="pages" href="./work.html">work</a></h3>
+      <h3><a class="pages" href="./skills.html">skillset</a></h3>
+      <h3><a class="pages" href="./writing.html">writing</a></h3>
+      <h3><a class="pages" href="./contact.html">contact</a></h3>
+    </div>
+  </nav>
+
+  <!-- Main section -->
+  <main>
+    <section class="work-section blog-post-section">
+      <div class="heading">
+        <h1>Data types</h1>
+      </div>
+
+    <!-- Blog post section -->
+    <article class="post">
+      <div class="post-container">
+        <div class="image-content">
+          <img src="../images/blog3.jpg" alt="Image of a dictionary">
+        </div>
+        <!-- Text -->
+        <p class="date">12 October 2022</p>
+        <p>
+          A list is a mutable and ordered collection of data, known as a <em>compound data type</em>. Lists might contain items of different types, they can be indexed and sliced, and they are iterable. They are represented by square brackets and elements separated by commas, eg:
+        </p>
+        <div class="code-block">
+          <pre>
+            <code class="langugage-python">
+my_list = [1, 2, 3, 4]
+            </code>
+          </pre>
+        </div>
+        <p>
+          Lists are perfect for storing data that needs to be appended, removed, changed or iterated over. Because they are ordered, each element in a list remains in position, which means you can index into them consistently. An example of using a list is when you want to make a collection of all the names in a phonebook:
+        </p>
+        <div class="code-block">
+          <pre>
+            <code class="langugage-python">
+names_list = ['Matt', 'Beth', 'Rohan', 'Anna', 'Matt']
+            </code>
+          </pre>
+        </div>
+        <p>
+          Lists include a number of built-in methods such as <em>len()</em> (finds the length of the list), <em>append()</em> (adds to the list), <em>pop()</em> (removes from the list).
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam, in error ratione possimus voluptate! Laborum, culpa sint eaque laboriosam quaerat aspernatur ad, mollitia aut vel reiciendis hic facilis blanditiis quam expedita dicta. Nostrum odit suscipit odio voluptates unde accusamus, tempora dicta repellendus facere quod voluptas recusandae? Suscipit, error a!
+        </p>
+      </div>
+
+      <!-- Return to blog -->
+      <p class="back">
+        <a class="back-tag" href="./writing.html">
+          Back
+        </a>
+      </p>
+
+    </article>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="socials-container">
+      <div class="socials-content">
+        <a href="https://www.linkedin.com/in/matt-garrow-460295255/"><i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram fa-2xl" aria-hidden="true"></i></a>
+        <a href="https://github.com/mjkgarrow"><i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
   <!-- Animated background -->
   <div class="blobs">
     <div class="blob">
@@ -163,116 +269,12 @@
     </div>
   </div>
 
-  <!-- Header logo -->
-  <header>
-    <p><a href="../index.html">matt</a></p>
-  </header>
-
-  <!-- Navigation -->
-  <nav>
-    <div class="button-container">
-      <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="blobSvg">
-        <g transform="translate(173.3793182373047, 5.964118957519531)">
-          <path onclick="clickFunction()">
-            <animate attributeName="d"
-              dur="40s"
-              repeatCount="indefinite"
-  
-              values="M363,310Q346,370,278.5,394.5Q211,419,143,376.5Q75,334,105,264.5Q135,195,175,146.5Q215,98,300.5,89Q386,80,383,165Q380,250,363,310Z;
-              
-              M420,327Q372,404,284,446Q196,488,117,420Q38,352,72.5,266.5Q107,181,161.5,141.5Q216,102,264.5,136.5Q313,171,390.5,210.5Q468,250,420,327Z;
-              
-              M400.5,333.5Q383,417,300,405Q217,393,188,343.5Q159,294,106,224.5Q53,155,124,82Q195,9,284,52Q373,95,395.5,172.5Q418,250,400.5,333.5Z;
-  
-              M407.5,298.5Q328,347,262.5,414.5Q197,482,125.5,413.5Q54,345,94,269.5Q134,194,173.5,141Q213,88,287.5,98.5Q362,109,424.5,179.5Q487,250,407.5,298.5Z;
-  
-              M418.01303,337.00261Q388.25391,424.00521,303.06478,406.7513Q217.87565,389.49739,146.84439,361.88868Q75.81312,334.27996,102.93522,263.02866Q130.05732,191.77736,176.10126,159.05732Q222.14519,126.33728,303.70216,103.22561Q385.25912,80.11393,416.51563,165.05696Q447.77215,250,418.01303,337.00261Z;
-  
-              M363,310Q346,370,278.5,394.5Q211,419,143,376.5Q75,334,105,264.5Q135,195,175,146.5Q215,98,300.5,89Q386,80,383,165Q380,250,363,310Z"/>
-          </path>
-        </g>
-      </svg>  
-    </div>
-    <div id='nav-links'>
-      <h3><a class="pages" href="./about.html">about</a></h3>
-      <h3><a class="pages" href="./work.html">work</a></h3>
-      <h3><a class="pages" href="./skills.html">skillset</a></h3>
-      <h3><a class="pages" href="./writing.html">writing</a></h3>
-      <h3><a class="pages" href="./contact.html">contact</a></h3>
-    </div>
-  </nav>
-
-  <!-- Main section -->
-  <main>
-    <section class="work-section blog-post-section">
-      <div class="heading">
-        <h1>Data types</h1>
-      </div>
-
-    <!-- Blog post section -->
-    <article class="post">
-      <div class="post-container">
-        <div class="image-content">
-          <img src="../images/blog3.jpg" alt="Image of a dictionary">
-        </div>
-        <!-- Text -->
-        <p class="date">12 October 2022</p>
-        <p>
-          A list is a mutable and ordered collection of data, known as a <em>compound data type</em>. Lists might contain items of different types, they can be indexed and sliced, and they are iterable. They are represented by square brackets and elements separated by commas, eg:
-        </p>
-        <div class="code-block">
-          <pre>
-            <code class="langugage-python">
-my_list = [1, 2, 3, 4]
-            </code>
-          </pre>
-        </div>
-        <p>
-          Lists are perfect for storing data that needs to be appended, removed, changed or iterated over. Because they are ordered, each element in a list remains in position, which means you can index into them consistently. An example of using a list is when you want to make a collection of all the names in a phonebook:
-        </p>
-        <div class="code-block">
-          <pre>
-            <code class="langugage-python">
-names_list = ['Matt', 'Beth', 'Rohan', 'Anna', 'Matt']
-            </code>
-          </pre>
-        </div>
-        <p>
-          Lists include a number of built-in methods such as <em>len()</em> (finds the length of the list), <em>append()</em> (adds to the list), <em>pop()</em> (removes from the list).
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam, in error ratione possimus voluptate! Laborum, culpa sint eaque laboriosam quaerat aspernatur ad, mollitia aut vel reiciendis hic facilis blanditiis quam expedita dicta. Nostrum odit suscipit odio voluptates unde accusamus, tempora dicta repellendus facere quod voluptas recusandae? Suscipit, error a!
-        </p>
-      </div>
-
-      <!-- Return to blog -->
-      <p class="back">
-        <a class="back-tag" href="./writing.html">
-          Back
-        </a>
-      </p>
-
-    </article>
-
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="socials-container">
-      <div class="socials-content">
-        <a href="https://www.linkedin.com/in/matt-garrow-460295255/"><i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i></a>
-        <a href="https://instagram.com"><i class="fa-brands fa-instagram fa-2xl" aria-hidden="true"></i></a>
-        <a href="https://github.com/mjkgarrow"><i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i></a>
-      </div>
-    </div>
-  </footer>
-
-
   <!-- Code highlight script from https://highlightjs.org/ -->
   <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
   <script>
+    // Highlight code snippets
     hljs.highlightAll();
+
     // Navigation script
     var counter = 0;
     function clickFunction() {
