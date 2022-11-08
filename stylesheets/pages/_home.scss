@@ -4,6 +4,8 @@
 
 main {
   section {
+    width: 90%;
+    height: 70%;
     h1 {
       align-self: baseline;
       // width: 400px;
@@ -53,10 +55,8 @@ main {
 @media only screen and (min-width: 1000px) {
   main {
     section {
-      margin-top: 50px;
+      // margin-top: 50px;
       align-items: flex-start;
-      width: 90%;
-      height: 80%;
       h1 {
         padding-top: 10px;
         width: 450px;

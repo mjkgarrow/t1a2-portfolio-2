@@ -378,6 +378,7 @@ nav #nav-links h3:hover {
   }
 }
 main {
+  min-width: 400px;
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
@@ -392,8 +393,9 @@ main section {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 70%;
   padding: 50px;
+  max-width: 1050px;
 }
 main section div h1 {
   width: -webkit-fit-content;
@@ -519,6 +521,10 @@ main section div h1 {
     transform: scale(1) translateY(0);
   }
 }
+main section {
+  width: 90%;
+  height: 70%;
+}
 main section h1 {
   align-self: baseline;
   flex: 2;
@@ -556,10 +562,7 @@ main section p span:hover {
 }
 @media only screen and (min-width: 1000px) {
   main section {
-    margin-top: 50px;
     align-items: flex-start;
-    width: 90%;
-    height: 80%;
   }
   main section h1 {
     padding-top: 10px;
