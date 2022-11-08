@@ -210,6 +210,26 @@ body {
     transform: scale(1) translateY(0);
   }
 }
+@-webkit-keyframes fade-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 footer {
   bottom: 0;
   position: fixed;
@@ -429,6 +449,16 @@ main section div h1 {
     transform: scale(1) translateY(0);
   }
 }
+@keyframes fade-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .card {
   border-radius: 10px;
   border: 1px solid white;
@@ -521,6 +551,16 @@ main section div h1 {
     transform: scale(1) translateY(0);
   }
 }
+@keyframes fade-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 main section {
   width: 90%;
   height: 70%;
@@ -589,6 +629,16 @@ main section p span:hover {
   }
   100% {
     transform: scale(1) translateY(0);
+  }
+}
+@keyframes fade-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 main {
@@ -693,6 +743,16 @@ main .about-section .text-body p a:hover {
     transform: scale(1) translateY(0);
   }
 }
+@keyframes fade-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .work-section {
   height: 80%;
   padding: 40px;
@@ -753,6 +813,16 @@ main .about-section .text-body p a:hover {
   }
   100% {
     transform: scale(1) translateY(0);
+  }
+}
+@keyframes fade-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .blog-post .top-part {
@@ -824,6 +894,16 @@ main .about-section .text-body p a:hover {
     transform: scale(1) translateY(0);
   }
 }
+@keyframes fade-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .blog-post-section {
   width: 100%;
 }
@@ -883,4 +963,76 @@ main .about-section .text-body p a:hover {
   .blog-post-section .post-container .code-block {
     transform: scale(1);
   }
+}
+@keyframes move {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.01) translateY(-5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes fade-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.skill-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.5em;
+}
+.skill-text .skill-container {
+  opacity: 0;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 1px solid;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  background-color: rgba(221, 97, 74, 0.25);
+  padding: 10px;
+  width: 100%;
+}
+.skill-text .skill-container .skill-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: rgb(22, 8, 54);
+}
+.skill-text .skill-container .skill-content h2 {
+  font-size: 1.3em;
+  align-self: flex-start;
+  padding-bottom: 5px;
+}
+.skill-text .skill-container .skill-content .skill-icons {
+  align-self: flex-end;
+}
+.skill-text .skill-container:nth-child(1) {
+  -webkit-animation: fade-up 700ms forwards ease-in-out;
+          animation: fade-up 700ms forwards ease-in-out;
+}
+.skill-text .skill-container:nth-child(2) {
+  -webkit-animation: fade-up 700ms forwards 300ms ease-in-out;
+          animation: fade-up 700ms forwards 300ms ease-in-out;
+}
+.skill-text .skill-container:nth-child(3) {
+  -webkit-animation: fade-up 700ms forwards 500ms ease-in-out;
+          animation: fade-up 700ms forwards 500ms ease-in-out;
+}
+.skill-text .skill-container:nth-child(4) {
+  -webkit-animation: fade-up 700ms forwards 700ms ease-in-out;
+          animation: fade-up 700ms forwards 700ms ease-in-out;
 }/*# sourceMappingURL=main.css.map */

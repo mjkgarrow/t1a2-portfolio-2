@@ -1,0 +1,60 @@
+@import '../default/colours';
+@import '../components/animation';
+@import '../components/mixins';
+
+
+.skill-text {
+  @include flex-center;
+  width: 100%;
+  gap: 0.5em;
+  .skill-container {
+    opacity: 0;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 1px solid;
+    backdrop-filter: blur(3px);
+    background-color: rgba(221, 97, 74, 0.25);
+    padding: 10px;
+    width: 100%;
+    .skill-content {
+      @include flex-center;
+      width: 100%;
+      color: $layer-5;
+      h2 {
+        font-size: 1.3em;
+        align-self: flex-start;
+        padding-bottom: 5px;
+      }
+      .skill-icons {
+        align-self: flex-end;
+      }
+    }
+  }
+  .skill-container:nth-child(1) {
+    animation: fade-up 700ms forwards ease-in-out;
+  }
+  .skill-container:nth-child(2) {
+    animation: fade-up 700ms forwards 300ms ease-in-out;
+  }
+  .skill-container:nth-child(3) {
+    animation: fade-up 700ms forwards 500ms ease-in-out;
+  }
+  .skill-container:nth-child(4) {
+    animation: fade-up 700ms forwards 700ms ease-in-out;
+  }
+}
+
+
+// For tablet
+@media only screen and (min-width: 600px) {
+  .skill-text {
+    .skill-container {
+
+    }
+  }
+}
+
+// For desktop
+@media only screen and (min-width: 1000px) {
+
+}
