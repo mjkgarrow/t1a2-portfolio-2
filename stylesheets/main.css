@@ -460,6 +460,7 @@ main section div h1 {
   }
 }
 .card {
+  opacity: 0;
   border-radius: 10px;
   border: 1px solid white;
   max-width: 300px;
@@ -535,6 +536,31 @@ main section div h1 {
   filter: blur(3px) opacity(0.8) brightness(0.8);
 }
 
+.card:nth-child(1) {
+  -webkit-animation: fade-up 700ms forwards 300ms ease-in-out;
+          animation: fade-up 700ms forwards 300ms ease-in-out;
+}
+
+.card:nth-child(2) {
+  -webkit-animation: fade-up 700ms forwards 500ms ease-in-out;
+          animation: fade-up 700ms forwards 500ms ease-in-out;
+}
+
+.card:nth-child(3) {
+  -webkit-animation: fade-up 700ms forwards 700ms ease-in-out;
+          animation: fade-up 700ms forwards 700ms ease-in-out;
+}
+
+.card:nth-child(4) {
+  -webkit-animation: fade-up 700ms forwards 900ms ease-in-out;
+          animation: fade-up 700ms forwards 900ms ease-in-out;
+}
+
+.card:nth-child(5) {
+  -webkit-animation: fade-up 700ms forwards 1200ms ease-in-out;
+          animation: fade-up 700ms forwards 1200ms ease-in-out;
+}
+
 @media only screen and (min-width: 600px) {
   .card {
     font-size: 0.5em;
@@ -566,8 +592,11 @@ main section {
   height: 70%;
 }
 main section h1 {
+  opacity: 0;
   align-self: baseline;
   flex: 2;
+  -webkit-animation: fade-up 700ms forwards ease-in-out;
+          animation: fade-up 700ms forwards ease-in-out;
 }
 main section h1 a span {
   display: inline-block;
@@ -578,11 +607,14 @@ main section h1 a span:hover {
   color: rgb(22, 8, 54);
 }
 main section p {
+  opacity: 0;
   line-height: 1.2;
   width: 90%;
   font-size: 0.7em;
   text-align: end;
   padding-bottom: 10px;
+  -webkit-animation: fade-up 700ms forwards 200ms ease-in-out;
+          animation: fade-up 700ms forwards 200ms ease-in-out;
 }
 main section p span {
   display: inline-block;
@@ -722,8 +754,11 @@ main .about-section .text-body p a:hover {
     align-items: center;
   }
   main .about-section .heading .about-img {
+    opacity: 0;
     display: block;
     max-width: 150px;
+    -webkit-animation: fade-up 700ms forwards ease-in-out;
+            animation: fade-up 700ms forwards ease-in-out;
   }
   main .about-section .text-body {
     flex: 1;
@@ -990,12 +1025,14 @@ main .about-section .text-body p a:hover {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
   width: 100%;
   gap: 0.5em;
+  padding-bottom: 100px;
 }
 .skill-text .skill-container {
   opacity: 0;
-  max-width: 400px;
+  max-width: 350px;
   border-radius: 10px;
   border: 1px solid;
   -webkit-backdrop-filter: blur(3px);
@@ -1021,18 +1058,18 @@ main .about-section .text-body p a:hover {
   align-self: flex-end;
 }
 .skill-text .skill-container:nth-child(1) {
-  -webkit-animation: fade-up 700ms forwards ease-in-out;
-          animation: fade-up 700ms forwards ease-in-out;
-}
-.skill-text .skill-container:nth-child(2) {
   -webkit-animation: fade-up 700ms forwards 300ms ease-in-out;
           animation: fade-up 700ms forwards 300ms ease-in-out;
 }
-.skill-text .skill-container:nth-child(3) {
+.skill-text .skill-container:nth-child(2) {
   -webkit-animation: fade-up 700ms forwards 500ms ease-in-out;
           animation: fade-up 700ms forwards 500ms ease-in-out;
 }
-.skill-text .skill-container:nth-child(4) {
+.skill-text .skill-container:nth-child(3) {
   -webkit-animation: fade-up 700ms forwards 700ms ease-in-out;
           animation: fade-up 700ms forwards 700ms ease-in-out;
+}
+.skill-text .skill-container:nth-child(4) {
+  -webkit-animation: fade-up 700ms forwards 900ms ease-in-out;
+          animation: fade-up 700ms forwards 900ms ease-in-out;
 }/*# sourceMappingURL=main.css.map */

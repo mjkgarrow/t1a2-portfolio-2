@@ -85,9 +85,11 @@ main {
       .heading {
         @include flex-center;
         .about-img {
-
+          opacity: 0;
           display: block;
           max-width: 150px;
+          animation: fade-up 700ms forwards ease-in-out;
+
         }
       }
       .text-body {

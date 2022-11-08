@@ -7,9 +7,11 @@ main {
     width: 90%;
     height: 70%;
     h1 {
+      opacity: 0;
       align-self: baseline;
       // width: 400px;
       flex: 2;
+      animation: fade-up 700ms forwards ease-in-out;
       a {
         span {
           display: inline-block;
@@ -21,11 +23,13 @@ main {
       }
     }
     p {
+      opacity: 0;
       line-height: 1.2;
       width: 90%;
       font-size: 0.7em;
       text-align: end;
       padding-bottom: 10px;
+      animation: fade-up 700ms forwards 200ms ease-in-out;
       span {
         display: inline-block;
         &:hover {
