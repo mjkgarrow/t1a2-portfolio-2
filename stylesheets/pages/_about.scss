@@ -5,7 +5,8 @@
 // About section
 .about-section {
   margin: auto;
-  padding: 40px;
+  padding: 0 40px;
+  justify-content: flex-start;
   gap: 1em;
   // Page heading
   .heading {

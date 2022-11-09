@@ -682,7 +682,8 @@ main section p span:hover {
 }
 .about-section {
   margin: auto;
-  padding: 40px;
+  padding: 0 40px;
+  justify-content: flex-start;
   gap: 1em;
 }
 .about-section .heading {
