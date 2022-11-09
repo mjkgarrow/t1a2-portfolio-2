@@ -836,7 +836,7 @@ main .about-section .text-body p a:hover {
   border: 1px solid rgb(217, 217, 217);
 }
 .work-section .content-container {
-  padding-bottom: 115px;
+  padding-bottom: 300px;
   width: 100%;
 }
 .work-section .content-container .content-cards {
