@@ -1134,9 +1134,9 @@ main .about-section .text-body p a:hover {
 }
 .contact-section {
   padding: 0px 20px 20px 20px;
+  gap: 0;
 }
 .contact-section .contact-form {
-  padding-bottom: 100px;
   width: 90%;
   font-size: 0.8em;
   display: flex;
@@ -1158,30 +1158,29 @@ main .about-section .text-body p a:hover {
   width: 100%;
 }
 .contact-section .contact-form .form-content div label {
-  padding-left: 10px;
   align-self: baseline;
   margin-bottom: 10px;
 }
-.contact-section .contact-form .form-content div input {
-  all: unset;
-  height: 2em;
+.contact-section .contact-form .form-content div div {
   width: 100%;
   margin-top: 10px;
+  overflow: hidden;
   border: 1px solid;
   border-radius: 10px;
   background-color: rgba(221, 97, 74, 0.25);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
 }
-.contact-section .contact-form .form-content div textarea {
+.contact-section .contact-form .form-content div div input {
   all: unset;
-  margin-top: 10px;
-  border: 1px solid;
-  border-radius: 10px;
-  background-color: rgba(221, 97, 74, 0.25);
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  width: 100%;
+  margin-left: 10px;
+  height: 2em;
+  width: calc(100% - 10px);
+}
+.contact-section .contact-form .form-content div div textarea {
+  all: unset;
+  padding: 10px 0 0 10px;
+  width: calc(100% - 10px);
   min-height: 200px;
 }
 .contact-section .contact-form .form-content .button-container {
@@ -1257,10 +1256,28 @@ main .about-section .text-body p a:hover {
   background-color: #c62929;
   margin-left: 10px;
 }
+.contact-section .email {
+  opacity: 0;
+  padding: 10px 0 0 0;
+  align-self: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-animation: fade-up 700ms forwards 300ms ease-in-out;
+          animation: fade-up 700ms forwards 300ms ease-in-out;
+}
+.contact-section .email p {
+  font-weight: bold;
+  font-size: 0.6em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
 @media only screen and (min-width: 600px) {
   .contact-section {
     padding-top: 20px;
+    gap: 0.5em;
   }
   .contact-section .contact-form {
     font-size: 1em;
@@ -1268,6 +1285,20 @@ main .about-section .text-body p a:hover {
   .contact-section .availability {
     padding: 10px 0 0 5px;
     align-self: baseline;
+  }
+  .contact-section .email {
+    padding: 10px 0 0 0;
+    align-self: flex-start;
+    padding: 10px 0 0 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .contact-section .email p {
+    font-size: 0.6em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 @media only screen and (min-width: 1000px) {

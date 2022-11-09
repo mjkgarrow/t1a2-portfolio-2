@@ -1,6 +1,6 @@
 # T1A2 Portfolio - Matt Garrow
 
-This is my portfolio website.
+Welcome to my portfolio website.
 
 - [Netlify link](https://aquamarine-gelato-250f77.netlify.app/index.html)
 
@@ -8,25 +8,41 @@ This is my portfolio website.
 
 - [Presentation video]()
 
-Desktop view:
+---
 
-<p align="center">
-  <img src="./images/desktop-home.png" alt="Website screenshot" width="500"/>
-</p>
+## Screenshots
 
-Mobile view:
+Mobile:
 
 <p align="center">
   <img src="./images/mobile-home.png" alt="Mobile website screenshot" height="400"/>
 </p>
 
+Tablet:
+
+<p align="center">
+  <img src="./images/tablet-home.png" alt="Mobile website screenshot" height="400"/>
+</p>
+
+Desktop:
+
+<p align="center">
+  <img src="./images/desktop-home.png" alt="Website screenshot" width="500"/>
+</p>
+
 ---
+
+## Sitemap
+
+<p align="center">
+  <img src="./images/sitemap.png" alt="Mobile website screenshot" height="400"/>
+</p>
 
 ## Purpose:
 
-The main purpose of my website is to showcase who I am, what I like to work on, my resume and my skillset.
+The primary purpose of my website is to showcase who I am, what I like to work on, my resume and my skillset as a web developer.
 
-The secondary purpose is to demonstrate my front-end abilities, my aesthetic style, my personality and my thoughts on web development.
+The secondary purpose is to demonstrate my front-end abilities, my aesthetic style, my personality and my availability for work.
 
 ---
 
