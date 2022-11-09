@@ -685,6 +685,7 @@ main section p span:hover {
   justify-content: unset;
 }
 .about-main .about-section {
+  width: 100%;
   padding: 0 40px;
   justify-content: flex-start;
   gap: 1em;
@@ -720,6 +721,7 @@ main section p span:hover {
   display: flex;
   flex-direction: column;
   max-width: 700px;
+  font-size: 0.8em;
 }
 .about-main .about-section .text-body p {
   width: 100%;
@@ -754,6 +756,7 @@ main section p span:hover {
   }
   .about-main .about-section .text-body {
     gap: 0.2em;
+    font-size: 1em;
   }
   .about-main .about-section .text-body p {
     align-self: flex-start;

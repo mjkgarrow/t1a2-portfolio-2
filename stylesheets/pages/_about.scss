@@ -8,6 +8,7 @@
   justify-content: unset;
   .about-section {
     // margin: auto;
+    width: 100%;
     padding: 0 40px;
     justify-content: flex-start;
     gap: 1em;
@@ -38,8 +39,8 @@
       height: fit-content;
       display: flex;
       flex-direction: column;
-      // height: 100%;
       max-width: 700px;
+      font-size: 0.8em;
       p {
         width: 100%;
         color: $layer-5;
@@ -78,6 +79,7 @@
       }
       .text-body {
         gap: 0.2em;
+        font-size: 1em;
         p {
           align-self: flex-start;
           text-align: start;
@@ -97,7 +99,6 @@
     .about-section {
       flex-direction: row;
       height: fit-content;
-      
       .heading {
         @include flex-center;
         .about-img {
