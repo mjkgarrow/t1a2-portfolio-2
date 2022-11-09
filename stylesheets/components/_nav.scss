@@ -1,13 +1,16 @@
 @import '../default/colours';
 
+// Navigation menu
 nav {
   position: fixed;
   z-index: 1;
   top: 20px;
   left: 20px;
   width: 0px;
+  // Nav button
   .button-container {
     width: 50px;
+    // Nav image
     svg {
       transform: scale(2);
       width: 100%;
@@ -29,6 +32,7 @@ nav {
       }
     }
   }
+  // Nav menu with transition - button event in Javascript
   #nav-links {
     font-size: min(15vw, 10vh);
     opacity: 0;

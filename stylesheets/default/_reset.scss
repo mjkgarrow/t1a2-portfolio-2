@@ -1,10 +1,10 @@
 @import '../default/colours';
 
+// Changes colour of text highlighting
 ::-moz-selection { /* Code for Firefox */
   color: $layer-1;
   background: white;
 }
-
 ::selection {
   color: $layer-1;
   background: white;

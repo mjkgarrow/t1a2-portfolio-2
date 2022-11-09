@@ -1,12 +1,14 @@
 @import '../default/colours';
 @import '../components/mixins';
 
+// Main component, other pages can extend this styling
 main {
   height: 100%;
   @include flex-center;
   line-height: 1;
   width: 100vw;
   transition: filter 300ms ease-in-out;
+  // Section in main
   section {
     @include flex-center;
     height: 70%;

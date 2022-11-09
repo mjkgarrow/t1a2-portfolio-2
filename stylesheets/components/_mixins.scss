@@ -1,5 +1,6 @@
 @import '../default/colours';
 
+// Userful center flex mixin
 @mixin flex-center {
   display: flex;
   flex-flow: column nowrap;
@@ -7,6 +8,7 @@
   align-items: center;
 }
 
+// Blurred background and border for frosted skeumorphism effect
 @mixin blur-border {
   border: 1px solid;
   border-radius: 10px;

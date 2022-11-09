@@ -1,5 +1,6 @@
 @import '../default/colours';
 
+// Footer icon bar
 footer {
   bottom: 0;
   position: fixed;
@@ -31,6 +32,7 @@ footer {
 
 // For tablet
 @media only screen and (min-width: 600px) {
+  // Change to column orientation
   footer {
     width: fit-content;
     margin-bottom: 0;
@@ -48,6 +50,7 @@ footer {
 
 // For desktop
 @media only screen and (min-width: 1000px) {
+  // Change back to row
   footer {
     margin-bottom: 20px;
     .socials-container {

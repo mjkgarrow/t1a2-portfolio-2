@@ -1,5 +1,6 @@
 @import '../default/colours';
 
+// Background animated svgs
 .blobs {
   transition: filter 300ms ease-in-out;
   z-index: -1;
@@ -53,6 +54,7 @@
   }
 }
 
+// Background svgs for desktop view
 .second-blobs {
   display: none;
   transition: filter 300ms ease-in-out;

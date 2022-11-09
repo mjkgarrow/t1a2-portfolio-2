@@ -2,18 +2,21 @@
 @import '../components/animation';
 @import '../components/mixins';
 
-
+// Blog post text
 .blog-post-section {
   width: 100%;
+  // Post section
   .post {
     width: 100%;
     padding-bottom: 200px;
+    // Post wrapper
     .post-container {
       gap: 0.5em;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
+      // Blog post image
       .image-content {
         opacity: 0;
         width: 80%;
@@ -26,12 +29,14 @@
           width: 100%;
         }
       }
+      // Post text
       p {
         width: 97%;
         color: $layer-5;
         font-size: 0.6em;
         text-align: start;
       }
+      // Code sections
       .code-block {
         opacity: 0;
         animation: fade-up 700ms forwards 200ms ease-in-out;
@@ -44,6 +49,7 @@
         }
       }
     }
+    // Back button to return to blog list
     .back {
       text-shadow: 8px 8px $layer-5;
       padding-top: 50px;
@@ -53,6 +59,7 @@
   }
 }
 
+// Additional scalling for some code-block sections
 .scaling {
   transform: scale(0.7);
 }
