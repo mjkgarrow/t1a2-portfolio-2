@@ -7,9 +7,11 @@
   padding: 40px;
   justify-content: flex-start;
   gap: 1em;
+  // Page title
   .work-heading {
     display: flex;
     flex-direction: column;
+    // Download button for resume
     .resume-download {
       all: unset;
       display: flex;
@@ -26,17 +28,22 @@
         @include blur-border;
         padding: 7px;
         animation: fade-up 700ms forwards 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
       }
     }
+    // Resume button hover animation
     .resume-buttom:hover {
+      transition: all 200ms ease-in-out;
       background-color: $layer-4;
       color: $layer-5;
       border: 1px solid $layer-4;
     }
   }
+  // Work card section wrapper
   .content-container {
     padding-bottom: 200px;
     width: 100%;
+    // Card section 
     .content-cards {
       align-items: center;
       justify-content: center;

@@ -2,7 +2,9 @@
 @import '../components/animation';
 @import '../components/mixins';
 
+// Blog post extension to the card component
 .blog-post {
+  // Top part of card
   .top-part {
     backdrop-filter: blur(3px);
     background-color: rgba(221, 97, 74, 0.25);
@@ -37,6 +39,7 @@
       }
     }
   }
+  // Bottom part of card
   .bottom-part {
     p {
       padding: 0 0 10px 0;
@@ -44,6 +47,7 @@
       text-align: start;
     }
   }
+  // Hover effects for cards
   &:hover .blog-post-title {
     color: $layer-5;
   }
@@ -63,3 +67,5 @@
     max-width: unset;
   }
 }
+
+// No need for desktop as the card component class already covers that

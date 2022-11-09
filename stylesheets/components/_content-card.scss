@@ -2,6 +2,7 @@
 @import '../components/animation';
 @import '../components/mixins';
 
+// Card component for blog posts and projects
 .card {
   opacity: 0;
   -webkit-border-radius: 10px;
@@ -15,9 +16,11 @@
   background-color: rgba(221, 97, 74, 0.25);
   backdrop-filter: blur(5px);
   transition: all 200ms ease-in-out;
+  // Top part of card
   .top-part {
     height: 150px;
     position: relative;
+    // Tech stack icons
     .tech {
       width: 100%;
       font-size: 1.3em;
@@ -38,6 +41,7 @@
         }
       }
     }
+    // Project image
     .image-content {
       -webkit-border-top-left-radius: 10px;
       -webkit-border-top-right-radius: 10px;
@@ -56,6 +60,7 @@
       }
     }
   }
+  // Bottom part of card
   .bottom-part {
     -webkit-border-bottom-left-radius: 10px;
     -webkit-border-bottom-right-radius: 10px;
@@ -65,6 +70,7 @@
     padding: 10px;
     transition: all 200ms ease-in-out;
   }
+  // Card hover effects
   &:hover .bottom-part {
     color: $layer-5;
   }
@@ -76,6 +82,8 @@
     filter: blur(3px) opacity(0.8) brightness(0.8);
   }
 }
+
+// Card animation for each card 
 .card:nth-child(1) {
   animation: fade-up 700ms forwards 300ms ease-in-out;
 }
@@ -100,7 +108,10 @@
 
 // For tablet
 @media only screen and (min-width: 600px) {
+  // Changing font size of the card
   .card {
     font-size: 0.5em;
   }
 }
+
+// No need for desktop media querry as it looks good
