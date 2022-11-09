@@ -836,7 +836,7 @@ main .about-section .text-body p a:hover {
   border: 1px solid rgb(217, 217, 217);
 }
 .work-section .content-container {
-  padding-bottom: 300px;
+  padding-bottom: 200px;
   width: 100%;
 }
 .work-section .content-container .content-cards {
@@ -1148,7 +1148,7 @@ main .about-section .text-body p a:hover {
 }
 .contact-section .contact-form {
   width: 90%;
-  padding-bottom: 115px;
+  padding-bottom: 200px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
