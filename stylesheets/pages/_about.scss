@@ -2,101 +2,110 @@
 @import '../components/animation';
 @import '../components/mixins';
 
-main {
-  line-height: 1.2;
-  .about-section {
-    padding: 40px;
-    justify-content: flex-start;
-    height: fit-content;
-    gap: 1em;
-    .heading {
-      .about-img {
-        display: none;
-        margin: 20px;
-        max-width: 200px;
-        width: 50%;
-        border-radius: 50%;
-        filter: grayscale(1);
-        box-shadow: 5px 10px $layer-5;
-        transition: all 300ms ease-in-out;
-      }
-      .about-img:hover {
-        box-shadow: 0px 0px $layer-5;
-        filter: grayscale(0);
-      }
+// About section
+.about-section {
+  margin: auto;
+  padding: 40px;
+  gap: 1em;
+  // Page heading
+  .heading {
+    @include flex-center;
+    align-self: center;
+    // About image
+    .about-img {
+      opacity: 0;
+      animation: fade-up 700ms forwards ease-in-out;
+      margin: 20px;
+      max-width: 200px;
+      width: 30%;
+      border-radius: 50%;
+      filter: grayscale(1);
+      box-shadow: 5px 10px $layer-5;
+      transition: all 300ms ease-in-out;
     }
-    .text-body {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      justify-content: space-around;
-      p {
-        width: 100%;
+    .about-img:hover {
+      box-shadow: 0px 0px $layer-5;
+      filter: grayscale(0);
+    }
+  }
+  // About text
+  .text-body {
+    padding-bottom: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 700px;
+    p {
+      width: 100%;
+      color: $layer-5;
+      text-align: left;
+      a {
+        background-color: white;
+        border-radius: 10px;
         color: $layer-5;
-        text-align: left;
-        a {
-          background-color: white;
-          border-radius: 10px;
-          color: $layer-5;
-          padding: 0px 10px;
-          &:hover {
-            background-color: $layer-5;
-            color: white;
-          }
+        padding: 0px 10px;
+        &:hover {
+          background-color: $layer-5;
+          color: white;
         }
       }
     }
   }
 }
+
 
 
 // For tablet
 @media only screen and (min-width: 600px) {
-  main {
-    .about-section {
-      padding: 20px 20px 20px 80px;
-      margin-bottom: min(20%, 50px);
-      .heading {
-        align-self: baseline;
-        h1 {
-          flex: 0;
-        }
+  .about-section {
+    justify-content: stretch;
+    padding: 20px 20px 20px 80px;
+    .heading {
+      flex-flow: row;
+      gap: 1em;
+      align-self: baseline;
+      h1 {
+        flex: 0;
       }
-      .text-body {
-        gap: 0.2em;
-        p {
-          align-self: flex-start;
-          text-align: start;
-        }
-        p:nth-child(odd) {
-          text-align: start;
-        }
+    }
+    .text-body {
+      gap: 0.2em;
+      p {
+        align-self: flex-start;
+        text-align: start;
+      }
+      p:nth-child(odd) {
+        text-align: start;
       }
     }
   }
 }
 
+
 // For desktop
 @media only screen and (min-width: 1000px) {
-  main {
-    .about-section {
-      flex-direction: row;
-      margin-bottom: 0;
-      .heading {
-        @include flex-center;
-        .about-img {
-          opacity: 0;
-          display: block;
-          max-width: 150px;
-          animation: fade-up 700ms forwards ease-in-out;
+  .about-section {
+    flex-direction: row;
+    height: fit-content;
+    
+    .heading {
+      @include flex-center;
+      .about-img {
+        opacity: 0;
+        width: 50%;
+        display: block;
+        max-width: 150px;
+        animation: fade-up 700ms forwards ease-in-out;
 
-        }
       }
-      .text-body {
-        flex: 1;
-        p {
-          align-self: flex-end;
-        }
+    }
+    .text-body {
+      padding: 0;
+      height: fit-content;
+      flex: 1;
+      p {
+        align-self: flex-end;
       }
     }
   }

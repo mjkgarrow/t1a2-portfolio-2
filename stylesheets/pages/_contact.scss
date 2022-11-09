@@ -2,18 +2,22 @@
 @import '../components/animation';
 @import '../components/mixins';
 
+// Contact form extension of main section
 .contact-section {
   padding: 0px 20px 20px 20px;
   gap: 0;
+  // Contact form wrapper
   .contact-form {
     width: 90%;
     padding-bottom: 200px;
     @include flex-center;
+    // Contact form
     .form-content {
       @include flex-center;
       gap: 0.4em;
       max-width: 500px;
       width: 100%;
+      // Dib for labels and input divs
       div {
         opacity: 0;
         font-size: 0.7em;
@@ -22,6 +26,7 @@
           align-self: baseline;
           margin-bottom: 10px;
         }
+        // Div for inputs so the cursor location can be changed
         div {
           width: 100%;
           height: fit-content;
@@ -41,6 +46,7 @@
           }
         }
       }
+      // Send button
       .button-container {
         @include blur-border;
         width: fit-content;
@@ -51,13 +57,14 @@
           all: unset;
         }
       }
+      // Button hover animations
       .button-container:hover, .button-container:active {
         background-color: $layer-4;
         color: $layer-5;
         border: 1px solid $layer-4;
       }  
 
-
+      // Intro animations
       div:nth-child(1) {
         animation: fade-up 700ms forwards 300ms ease-in-out;
       }
@@ -75,7 +82,7 @@
       }
     }
   }
-  // Available to work
+  // Available to work indicator
   .availability {
     display: flex;
     justify-content: center;
@@ -106,6 +113,7 @@
       margin-left: 10px;
     }
   }
+  // Email button
   .email {
     opacity: 0;
     padding: 10px 0 0 0;

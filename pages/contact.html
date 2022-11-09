@@ -23,6 +23,7 @@
 
   <!-- Navigation -->
   <nav>
+    <!-- Navigation button -->
     <div class="button-container">
       <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="blobSvg">
         <g transform="translate(173.3793182373047, 5.964118957519531)">
@@ -46,6 +47,7 @@
         </g>
       </svg>  
     </div>
+    <!-- Navigation menu -->
     <div id='nav-links'>
       <h3><a class="pages" href="./about.html">about</a></h3>
       <h3><a class="pages" href="./work.html">work</a></h3>
@@ -61,14 +63,14 @@
       <div class="heading work-heading">
         <h1>contact</h1>
 
-        <!-- Availability -->
+        <!-- Availability indicator-->
         <div class="availability">
           <p>availability:</p>
           <div class="yes"></div>
           <div class="no"></div>
         </div>
 
-        <!-- Email address -->
+        <!-- Email button -->
         <div class="email">
           <p><a href="mailto:mjkgarrow@gmail.com">direct email</a></p>
         </div>
@@ -77,13 +79,15 @@
       <!-- Contact form -->
       <div class="contact-form">
         <form class="form-content" action="/" method="POST">
+          <!-- Name -->
           <div>
             <label for="fname">name</label>
             <div>
               <input type="text" id="fname" name="firstname">
             </div>
           </div>
-                
+
+          <!-- Email -->
           <div>
             <label for="lname">email</label>
             <div>
@@ -91,6 +95,7 @@
             </div>
           </div>
           
+          <!-- Subject -->
           <div>
             <label for="subject">subject</label>
             <div>
@@ -98,13 +103,15 @@
             </div>
           </div>
 
+          <!-- Message -->
           <div>
             <label for="message">message</label>
             <div>
               <textarea id="message" name="message"></textarea>
             </div>
           </div>
-      
+          
+          <!-- Send button -->
           <div class="button-container">
             <input class="submit-button" type="submit" value="send">
           </div>

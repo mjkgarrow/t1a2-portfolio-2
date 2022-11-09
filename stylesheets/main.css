@@ -680,97 +680,113 @@ main section p span:hover {
     opacity: 1;
   }
 }
-main {
-  line-height: 1.2;
-}
-main .about-section {
+.about-section {
+  margin: auto;
   padding: 40px;
-  justify-content: flex-start;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   gap: 1em;
 }
-main .about-section .heading .about-img {
-  display: none;
+.about-section .heading {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.about-section .heading .about-img {
+  opacity: 0;
+  -webkit-animation: fade-up 700ms forwards ease-in-out;
+          animation: fade-up 700ms forwards ease-in-out;
   margin: 20px;
   max-width: 200px;
-  width: 50%;
+  width: 30%;
   border-radius: 50%;
   filter: grayscale(1);
   box-shadow: 5px 10px rgb(22, 8, 54);
   transition: all 300ms ease-in-out;
 }
-main .about-section .heading .about-img:hover {
+.about-section .heading .about-img:hover {
   box-shadow: 0px 0px rgb(22, 8, 54);
   filter: grayscale(0);
 }
-main .about-section .text-body {
+.about-section .text-body {
+  padding-bottom: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-around;
+  max-width: 700px;
 }
-main .about-section .text-body p {
+.about-section .text-body p {
   width: 100%;
   color: rgb(22, 8, 54);
   text-align: left;
 }
-main .about-section .text-body p a {
+.about-section .text-body p a {
   background-color: white;
   border-radius: 10px;
   color: rgb(22, 8, 54);
   padding: 0px 10px;
 }
-main .about-section .text-body p a:hover {
+.about-section .text-body p a:hover {
   background-color: rgb(22, 8, 54);
   color: white;
 }
 
 @media only screen and (min-width: 600px) {
-  main .about-section {
+  .about-section {
+    justify-content: stretch;
     padding: 20px 20px 20px 80px;
-    margin-bottom: min(20%, 50px);
   }
-  main .about-section .heading {
+  .about-section .heading {
+    flex-flow: row;
+    gap: 1em;
     align-self: baseline;
   }
-  main .about-section .heading h1 {
+  .about-section .heading h1 {
     flex: 0;
   }
-  main .about-section .text-body {
+  .about-section .text-body {
     gap: 0.2em;
   }
-  main .about-section .text-body p {
+  .about-section .text-body p {
     align-self: flex-start;
     text-align: start;
   }
-  main .about-section .text-body p:nth-child(odd) {
+  .about-section .text-body p:nth-child(odd) {
     text-align: start;
   }
 }
 @media only screen and (min-width: 1000px) {
-  main .about-section {
+  .about-section {
     flex-direction: row;
-    margin-bottom: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
-  main .about-section .heading {
+  .about-section .heading {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
   }
-  main .about-section .heading .about-img {
+  .about-section .heading .about-img {
     opacity: 0;
+    width: 50%;
     display: block;
     max-width: 150px;
     -webkit-animation: fade-up 700ms forwards ease-in-out;
             animation: fade-up 700ms forwards ease-in-out;
   }
-  main .about-section .text-body {
+  .about-section .text-body {
+    padding: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     flex: 1;
   }
-  main .about-section .text-body p {
+  .about-section .text-body p {
     align-self: flex-end;
   }
 }
@@ -1075,7 +1091,7 @@ main .about-section .text-body p a:hover {
     opacity: 1;
   }
 }
-.skill-text {
+.skill-section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -1085,7 +1101,7 @@ main .about-section .text-body p a:hover {
   gap: 0.5em;
   padding-bottom: 115px;
 }
-.skill-text .skill-container {
+.skill-section .skill-container {
   opacity: 0;
   max-width: 350px;
   border-radius: 10px;
@@ -1096,7 +1112,7 @@ main .about-section .text-body p a:hover {
   padding: 10px;
   width: 100%;
 }
-.skill-text .skill-container .skill-content {
+.skill-section .skill-container .skill-content {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -1104,33 +1120,33 @@ main .about-section .text-body p a:hover {
   width: 100%;
   color: rgb(22, 8, 54);
 }
-.skill-text .skill-container .skill-content h2 {
+.skill-section .skill-container .skill-content h2 {
   font-size: 1.3em;
   align-self: flex-start;
   padding-bottom: 5px;
 }
-.skill-text .skill-container .skill-content .skill-icons {
+.skill-section .skill-container .skill-content .skill-icons {
   align-self: flex-end;
 }
-.skill-text .skill-container .skill-content .skill-icons a {
+.skill-section .skill-container .skill-content .skill-icons a {
   transition: color 200ms ease-in-out;
 }
-.skill-text .skill-container .skill-content .skill-icons a:hover {
+.skill-section .skill-container .skill-content .skill-icons a:hover {
   color: white;
 }
-.skill-text .skill-container:nth-child(1) {
+.skill-section .skill-container:nth-child(1) {
   -webkit-animation: fade-up 700ms forwards 300ms ease-in-out;
           animation: fade-up 700ms forwards 300ms ease-in-out;
 }
-.skill-text .skill-container:nth-child(2) {
+.skill-section .skill-container:nth-child(2) {
   -webkit-animation: fade-up 700ms forwards 500ms ease-in-out;
           animation: fade-up 700ms forwards 500ms ease-in-out;
 }
-.skill-text .skill-container:nth-child(3) {
+.skill-section .skill-container:nth-child(3) {
   -webkit-animation: fade-up 700ms forwards 700ms ease-in-out;
           animation: fade-up 700ms forwards 700ms ease-in-out;
 }
-.skill-text .skill-container:nth-child(4) {
+.skill-section .skill-container:nth-child(4) {
   -webkit-animation: fade-up 700ms forwards 900ms ease-in-out;
           animation: fade-up 700ms forwards 900ms ease-in-out;
 }
