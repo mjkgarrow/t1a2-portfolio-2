@@ -7,7 +7,7 @@
   width: 100%;
   .post {
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     .post-container {
       gap: 0.5em;
       display: flex;
@@ -15,7 +15,16 @@
       justify-content: flex-start;
       align-items: center;
       .image-content {
-        display: none;
+        opacity: 0;
+        width: 80%;
+        max-width: 500px;
+        animation: fade-up 700ms forwards 100ms ease-in-out;
+        img {
+          box-shadow: 10px 10px $layer-5;
+          border-radius: 10px;
+          object-fit: cover;
+          width: 100%;
+        }
       }
       p {
         width: 97%;
@@ -24,8 +33,9 @@
         text-align: start;
       }
       .code-block {
-        width: fit-content;
+        // width: fit-content;
         font-size: 0.5em;
+        max-width: 100%;
         pre {
           code {
             border-radius: 10px;
