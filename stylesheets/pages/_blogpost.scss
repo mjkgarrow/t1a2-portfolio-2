@@ -33,7 +33,8 @@
         text-align: start;
       }
       .code-block {
-        // width: fit-content;
+        opacity: 0;
+        animation: fade-up 700ms forwards 200ms ease-in-out;
         font-size: 0.5em;
         max-width: 100%;
         pre {

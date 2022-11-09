@@ -1015,6 +1015,9 @@ main .about-section .text-body p a:hover {
   text-align: start;
 }
 .blog-post-section .post .post-container .code-block {
+  opacity: 0;
+  -webkit-animation: fade-up 700ms forwards 200ms ease-in-out;
+          animation: fade-up 700ms forwards 200ms ease-in-out;
   font-size: 0.5em;
   max-width: 100%;
 }
