@@ -2,7 +2,7 @@
 @import '../components/mixins';
 
 main {
-  height: 100vh;
+  height: 100%;
   @include flex-center;
   line-height: 1;
   width: 100vw;

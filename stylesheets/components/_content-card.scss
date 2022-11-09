@@ -91,6 +91,12 @@
 .card:nth-child(5) {
   animation: fade-up 700ms forwards 1200ms ease-in-out;
 }
+.card:nth-child(6) {
+  animation: fade-up 700ms forwards 1300ms ease-in-out;
+}
+.card:nth-child(7) {
+  animation: fade-up 700ms forwards 1400ms ease-in-out;
+}
 
 // For tablet
 @media only screen and (min-width: 600px) {
