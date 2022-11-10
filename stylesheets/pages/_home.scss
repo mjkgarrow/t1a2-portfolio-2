@@ -8,6 +8,7 @@ main {
     width: 90%;
     height: 70%;
     h1 {
+      text-shadow: 3px 3px $layer-5;
       opacity: 0;
       align-self: baseline;
       flex: 2;
@@ -24,6 +25,7 @@ main {
     }
     p {
       opacity: 0;
+      color: $layer-5;
       line-height: 1.2;
       width: 90%;
       font-size: 0.7em;
@@ -31,9 +33,28 @@ main {
       padding-bottom: 10px;
       animation: fade-up 700ms forwards 200ms ease-in-out;
       span {
+        color: white;
         display: inline-block;
-        &:hover {
-          color: $layer-5;
+        a {
+          display: inline-block;
+          position: relative;
+        }
+        // Underline animation from https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-15.php
+        a:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: white;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+        a:hover:after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
         }
       }
     }

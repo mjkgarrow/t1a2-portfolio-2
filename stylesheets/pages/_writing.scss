@@ -10,7 +10,6 @@
     background-color: rgba(221, 97, 74, 0.25);
     background-color: url('../../images/blog1.jpg');
     .blog-post-title {
-      transition: all 200ms ease-in-out;
       height: 100%;
       width: 90%;
       font-size: 1.3em;
@@ -19,9 +18,8 @@
       bottom: 50%;
       left: 50%;
       translate: -50% 50%;
-      transition: all 200ms ease-in-out;
       h4 {
-        transition: all 200ms ease-in-out;
+
         position: absolute;
         top: 20px;
       }
@@ -32,7 +30,6 @@
       }
     }
     .image-content {
-      transition: all 200ms ease-in-out;
       img {
         object-position: 0;
         filter: brightness(0.6) opacity(1);
@@ -56,16 +53,25 @@
   }
   &:hover .blog-post-title>h4 {
     color: $layer-5;
-    font-size: 1.5em;
+    // font-size: 1.5em;
   }
 }
 
 // For tablet
 @media only screen and (min-width: 600px) {
   .blog-post {
-    width: 325px;
+    width: 310px;
+    height: 240px;
     max-width: unset;
   }
 }
 
 // No need for desktop as the card component class already covers that
+// For desktop
+@media only screen and (min-width: 1000px) {
+  .blog-post {
+    width: 340px;
+    height: 210px;
+    max-width: unset;
+  }
+}

@@ -16,15 +16,19 @@ footer {
     .socials-content {
       background-color: $layer-1;
       border-radius: 25px;
-      padding: 15px 10px;
       display: flex;
       justify-content: space-evenly;
       width: 150px;
       a {
-        transition: color 200ms ease-in-out;
-      }
-      a:hover {
-        color: $layer-5;
+        padding: 5px 0 0 0;
+        svg {
+          height: 25px;
+          fill: white;
+          transition: fill 200ms ease-in-out;
+        }
+        svg:hover {
+          fill: $layer-5;
+        }
       }
     }
   }
@@ -38,11 +42,17 @@ footer {
     margin-bottom: 0;
     .socials-container {
       margin-left: 30px;
+      margin-bottom: 30px;
       width: fit-content;
       .socials-content {
         background-color: transparent;
-        height: 200px;
+        height: 130px;
         flex-direction: column;
+        a {
+          svg {
+            height: 30px;
+          }
+        }
       }
     }
   }
@@ -54,12 +64,24 @@ footer {
   footer {
     margin-bottom: 20px;
     .socials-container {
+      width: 130px;
       .socials-content {
         background-color: $layer-1;
         border-radius: 25px;
-        padding: 15px 10px;
         height: fit-content;
         flex-direction: row;
+        a {
+          padding: 5px 0 0 0;
+          svg {
+            height: 25px;
+            fill: white;
+            transition: fill 200ms ease-in-out;
+          }
+          svg:hover {
+            fill: $layer-5;
+          }
+        }
+  
       }
     }
   }

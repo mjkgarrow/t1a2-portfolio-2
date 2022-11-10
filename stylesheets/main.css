@@ -243,16 +243,20 @@ footer .socials-container {
 footer .socials-container .socials-content {
   background-color: rgb(221, 97, 74);
   border-radius: 25px;
-  padding: 15px 10px;
   display: flex;
   justify-content: space-evenly;
   width: 150px;
 }
 footer .socials-container .socials-content a {
-  transition: color 200ms ease-in-out;
+  padding: 5px 0 0 0;
 }
-footer .socials-container .socials-content a:hover {
-  color: rgb(22, 8, 54);
+footer .socials-container .socials-content a svg {
+  height: 25px;
+  fill: white;
+  transition: fill 200ms ease-in-out;
+}
+footer .socials-container .socials-content a svg:hover {
+  fill: rgb(22, 8, 54);
 }
 
 @media only screen and (min-width: 600px) {
@@ -264,28 +268,45 @@ footer .socials-container .socials-content a:hover {
   }
   footer .socials-container {
     margin-left: 30px;
+    margin-bottom: 30px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
   footer .socials-container .socials-content {
     background-color: transparent;
-    height: 200px;
+    height: 130px;
     flex-direction: column;
+  }
+  footer .socials-container .socials-content a svg {
+    height: 30px;
   }
 }
 @media only screen and (min-width: 1000px) {
   footer {
     margin-bottom: 20px;
   }
+  footer .socials-container {
+    width: 130px;
+  }
   footer .socials-container .socials-content {
     background-color: rgb(221, 97, 74);
     border-radius: 25px;
-    padding: 15px 10px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     flex-direction: row;
+  }
+  footer .socials-container .socials-content a {
+    padding: 5px 0 0 0;
+  }
+  footer .socials-container .socials-content a svg {
+    height: 25px;
+    fill: white;
+    transition: fill 200ms ease-in-out;
+  }
+  footer .socials-container .socials-content a svg:hover {
+    fill: rgb(22, 8, 54);
   }
 }
 header {
@@ -595,6 +616,7 @@ main section {
   height: 70%;
 }
 main section h1 {
+  text-shadow: 3px 3px rgb(22, 8, 54);
   opacity: 0;
   align-self: baseline;
   flex: 2;
@@ -611,6 +633,7 @@ main section h1 a span:hover {
 }
 main section p {
   opacity: 0;
+  color: rgb(22, 8, 54);
   line-height: 1.2;
   width: 90%;
   font-size: 0.7em;
@@ -620,10 +643,28 @@ main section p {
           animation: fade-up 700ms forwards 200ms ease-in-out;
 }
 main section p span {
+  color: white;
   display: inline-block;
 }
-main section p span:hover {
-  color: rgb(22, 8, 54);
+main section p span a {
+  display: inline-block;
+  position: relative;
+}
+main section p span a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+main section p span a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media only screen and (min-width: 600px) {
@@ -865,7 +906,7 @@ main section p span:hover {
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   gap: 0.5em;
 }
 
@@ -930,7 +971,6 @@ main section p span:hover {
   background-color: url("../../images/blog1.jpg");
 }
 .blog-post .top-part .blog-post-title {
-  transition: all 200ms ease-in-out;
   height: 100%;
   width: 90%;
   font-size: 1.3em;
@@ -939,10 +979,8 @@ main section p span:hover {
   bottom: 50%;
   left: 50%;
   translate: -50% 50%;
-  transition: all 200ms ease-in-out;
 }
 .blog-post .top-part .blog-post-title h4 {
-  transition: all 200ms ease-in-out;
   position: absolute;
   top: 20px;
 }
@@ -950,9 +988,6 @@ main section p span:hover {
   position: absolute;
   bottom: 10px;
   font-size: 0.4em;
-}
-.blog-post .top-part .image-content {
-  transition: all 200ms ease-in-out;
 }
 .blog-post .top-part .image-content img {
   -o-object-position: 0;
@@ -972,12 +1007,19 @@ main section p span:hover {
 }
 .blog-post:hover .blog-post-title > h4 {
   color: rgb(22, 8, 54);
-  font-size: 1.5em;
 }
 
 @media only screen and (min-width: 600px) {
   .blog-post {
-    width: 325px;
+    width: 310px;
+    height: 240px;
+    max-width: unset;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .blog-post {
+    width: 340px;
+    height: 210px;
     max-width: unset;
   }
 }
@@ -1047,6 +1089,7 @@ main section p span:hover {
   border-radius: 10px;
 }
 .blog-post-section .post .back {
+  color: white;
   text-shadow: 8px 8px rgb(22, 8, 54);
   padding-top: 50px;
   font-size: 1.2em;
