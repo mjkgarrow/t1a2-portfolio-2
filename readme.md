@@ -39,6 +39,17 @@ Desktop:
 <p align="center">
   <img src="./images/readme-pics/sitemap.png" alt="Mobile website screenshot" height="400"/>
 </p>
+ 
+---
+
+## Figma wireframes
+
+<p align="center">
+  <img src="./images/readme-pics/figma-map-1.png" alt="Mobile website screenshot"/>
+</p>
+<p align="center">
+  <img src="./images/readme-pics/figma-map-2.png" alt="Mobile website screenshot"/>
+</p>
 
 ## Purpose:
 
@@ -94,7 +105,7 @@ This portfolio is designed to be memorable and iconic for future employers.
 
 - Most pages passed Google Chrome Lighthouse reports with 93% or more (pages with lots of images scored lower).
 
-- Created a custom favicon using the same Google Font the header logo uses. Favicons generated with [favicon.io](https://favicon.io/favicon-generator/).
+- Custom favicon, created with the same Google Font the header logo uses. Favicons generated with [favicon.io](https://favicon.io/favicon-generator/).
 
 ---
 
