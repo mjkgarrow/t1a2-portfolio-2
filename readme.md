@@ -8,6 +8,8 @@ Welcome to my portfolio website.
 
 - [Presentation video]()
 
+- [Wireframe](https://www.figma.com/file/y82inPoxJzu0kpWrcMoRf3/T1A2-Portfolio)
+
 ---
 
 ## Screenshots
@@ -15,19 +17,19 @@ Welcome to my portfolio website.
 Mobile:
 
 <p align="center">
-  <img src="./images/mobile-home.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./images/readme-pics/mobile-home.png" alt="Mobile website screenshot" height="400"/>
 </p>
 
 Tablet:
 
 <p align="center">
-  <img src="./images/tablet-home.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./images/readme-pics/tablet-home.png" alt="Mobile website screenshot" height="400"/>
 </p>
 
 Desktop:
 
 <p align="center">
-  <img src="./images/desktop-home.png" alt="Website screenshot" width="500"/>
+  <img src="./images/readme-pics/desktop-home.png" alt="Website screenshot" width="500"/>
 </p>
 
 ---
@@ -35,14 +37,24 @@ Desktop:
 ## Sitemap
 
 <p align="center">
-  <img src="./images/sitemap.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./images/readme-pics/sitemap.png" alt="Mobile website screenshot" height="400"/>
 </p>
 
 ## Purpose:
 
+This portfolio site is to showcase to employers the following skills:
+
+- UI/UX design
+
+- Writing clean, syntactically and semantically valid HTML and CSS
+
+- Artistic flair
+
 The primary purpose of my website is to showcase who I am, what I like to work on, my resume and my skillset as a web developer.
 
 The secondary purpose is to demonstrate my front-end abilities, my aesthetic style, my personality and my availability for work.
+
+This portfolio is designed to be memorable and iconic for future employers.
 
 ---
 
@@ -52,29 +64,43 @@ The secondary purpose is to demonstrate my front-end abilities, my aesthetic sty
 
 - This website is mobile-first and has 2 media breakpoints at 600px (for tablets) and 1000px (desktop).
 
-- I utilised flex-box for my styling.
+- I utilised flex-box for the majority of my styling.
 
 - I used [Highlight.js](https://highlightjs.org/) for some of the code snippets I used in the blog section. The theme is [atom-one-dark](https://cdn.jsdelivr.net/npm/highlight.js@11.6.0/styles/atom-one-dark.css).
 
-#### What I'm proud of:
+- I used [Font Awesome](https://fontawesome.com/) to source the icons from the footer.
 
-- I created beautiful looking blog post cards and project cards that included images that scale when you hover over them, without expanding past the size of the containing div. This was a difficult process and took a few days to implement.
+- I used [DevIcons](https://devicon.dev/) for the tech stack icons.
 
-- The background shapes took a long time to make and get the animations working just right and responsive. I used inline svgs instead of a file so that I could adjust things like fill and blend-mode in css. I made the shapes using [Blob Maker](https://passionhacks.com/blob-maker/).
+- I drew animation inspiration from [w3resource](https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-15.php) for the underline animations on the home page.
 
-- I'm really proud of the layout of the site. The use of negative space, a clean font, and a visually striking style really set the portfolio apart from my earlier iterations.
+- SVGs created with [Blob Maker](https://passionhacks.com/blob-maker/).
 
-#### The difficulties
+#### Features
 
-- I had a hard time settling on the right way to do a navigation menu. My original thought was to use a hamburger menu, as can be seen in my wireframe. However I abandoned that idea because it didn't match my design language. I opted to use an animating blob that has some javascript to active at the navigation menu. The blob fits well with the feel of the site as well as being a bit playful and fun to use. The navigation itself is animated and creates a blurred background when it appears on.
+- Animated background SVGs used throughout the site. They are small file size and scale well on all devices.
 
-- The colour scheme was a tough choice as well. There were so many options and they all looked really great. I changed up the colour scheme about 10 times before settling on a monochrome aesthetic. This seemed to match with the artistic UI/UX tone while also keeping the styling simple and easy to replicate across the site.
+- Unique navigation button that uses an animated SVG.
+
+- Clean footer with quick access links to my most used social media/repositories.
+
+- Responsive headers and main section content. Have tested on a real phone to make sure it is working correctly.
+
+- Glassmorphism aesthetic UI design that helps feature the animating background.
+
+- Validated HTML syntax.
+
+- Use of small-size, efficient webp image formats on all images.
+
+- Most pages passed Google Chrome Lighthouse reports with 93% or more (pages with lots of images scored lower).
+
+- Created a custom favicon using the same Google Font the header logo uses. Favicons generated with [favicon.io](https://favicon.io/favicon-generator/).
 
 ---
 
 ## Target Audience
 
-This website is for mostly targeted to a front-end employer. It doesn't have much (or any) back-end features and is entirely HTML and CSS.
+This website is for targeted to a front-end employer. It doesn't have much (or any) back-end features and is entirely HTML and CSS.
 
 I made the colourway, images and functionality appeal visually and the styling is about displaying information clearly.
 
@@ -82,19 +108,11 @@ I made the colourway, images and functionality appeal visually and the styling i
 
 ## Tech stack
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="50"/>
-
-Deployed with [Netlify](https://www.netlify.com)
+- HTML
+- SCSS/SCC
+- [Netlify](https://www.netlify.com)
+- [Figma](https://www.figma.com)
 
 ---
 
-I deviated from my wireframes quite a lot, but they were very helpful in laying out the design.
-
-Colour choices are in line with accessability guidelines for appropriate contrast levels and viewing.
-
-Wireframe: [Figma link](https://www.figma.com/file/efpb32yzwvxEcuG2w1a3IM/Portfolio)
-
-<p align="center">
-<img src="./images/WIP%20Index%20wireframe.png" alt="Wireframe" width="300"/>
-</p>
+This is my second portfolio. I built the first one ([here](https://neon-flan-079ccf.netlify.app/)) and learned so much I made a new one. This second site showcases much more of my skills and style.

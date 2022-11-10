@@ -121,6 +121,7 @@
     width: fit-content;
     animation: fade-up 700ms forwards 300ms ease-in-out;
     p {
+      color: white;
       font-weight: bold;
       font-size: 0.6em;
       width: fit-content;
@@ -138,7 +139,7 @@
     font-size: 1em;
     }
     .availability {
-      padding: 10px 0 0 5px;
+      padding: 20px 0 0 5px;
       align-self: baseline;
     }
     .email {

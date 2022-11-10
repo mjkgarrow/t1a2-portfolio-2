@@ -1059,6 +1059,8 @@ main section p span a:hover:after {
   align-items: center;
 }
 .blog-post-section .post .post-container .image-content {
+  display: flex;
+  justify-content: center;
   opacity: 0;
   width: 80%;
   max-width: 500px;
@@ -1070,7 +1072,7 @@ main section p span a:hover:after {
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
+  width: 70%;
 }
 .blog-post-section .post .post-container p {
   width: 97%;
@@ -1105,7 +1107,7 @@ main section p span a:hover:after {
     width: 90%;
   }
   .blog-post-section .post .post-container p {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -1357,6 +1359,7 @@ main section p span a:hover:after {
           animation: fade-up 700ms forwards 300ms ease-in-out;
 }
 .contact-section .email p {
+  color: white;
   font-weight: bold;
   font-size: 0.6em;
   width: -webkit-fit-content;
@@ -1373,7 +1376,7 @@ main section p span a:hover:after {
     font-size: 1em;
   }
   .contact-section .availability {
-    padding: 10px 0 0 5px;
+    padding: 20px 0 0 5px;
     align-self: baseline;
   }
   .contact-section .email {
