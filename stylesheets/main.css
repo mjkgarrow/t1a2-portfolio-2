@@ -619,14 +619,16 @@ main section h1 {
   -webkit-animation: fade-up 700ms forwards ease-in-out;
           animation: fade-up 700ms forwards ease-in-out;
 }
-main section h1 a span {
+main section h1 span a {
   display: inline-block;
   -webkit-animation: move 2s forwards infinite;
           animation: move 2s forwards infinite;
 }
-main section h1 a span:hover {
+main section h1 span a:hover {
   color: rgb(22, 8, 54);
   text-shadow: 2px 2px rgb(217, 217, 217);
+  -webkit-animation: color 200ms forwards ease-in-out;
+          animation: color 200ms forwards ease-in-out;
 }
 main section p {
   opacity: 0;

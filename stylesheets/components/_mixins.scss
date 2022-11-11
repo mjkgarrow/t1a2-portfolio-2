@@ -15,3 +15,17 @@
   background-color: rgba(221, 97, 74, 0.25);
   backdrop-filter: blur(3px);
 }
+
+// Underline animation from https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-15.php
+@mixin underline-animation-after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
