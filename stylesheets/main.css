@@ -626,6 +626,7 @@ main section h1 a span {
 }
 main section h1 a span:hover {
   color: rgb(22, 8, 54);
+  text-shadow: 2px 2px rgb(217, 217, 217);
 }
 main section p {
   opacity: 0;

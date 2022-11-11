@@ -18,6 +18,7 @@ main {
           animation: move 2s forwards infinite;
           &:hover {
             color: $layer-5;
+            text-shadow: 2px 2px rgb(217, 217, 217);
           }
         }
       }
