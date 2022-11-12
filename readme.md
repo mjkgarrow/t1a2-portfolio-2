@@ -2,7 +2,7 @@
 
 Welcome to my portfolio website.
 
-- [Netlify link](https://aquamarine-gelato-250f77.netlify.app/index.html)
+- [Netlify link](https://mattgarrow.netlify.app/)
 
 - [Github repository](https://github.com/mjkgarrow/t1a2-portfolio-2)
 
@@ -17,19 +17,19 @@ Welcome to my portfolio website.
 Mobile:
 
 <p align="center">
-  <img src="./images/readme-pics/mobile-home.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/mobile-home.png" alt="Mobile website screenshot" height="400"/>
 </p>
 
 Tablet:
 
 <p align="center">
-  <img src="./images/readme-pics/tablet-home.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/tablet-home.png" alt="Mobile website screenshot" height="400"/>
 </p>
 
 Desktop:
 
 <p align="center">
-  <img src="./images/readme-pics/desktop-home.png" alt="Website screenshot" width="500"/>
+  <img src="./docs/desktop-home.png" alt="Website screenshot" width="500"/>
 </p>
 
 ---
@@ -37,7 +37,7 @@ Desktop:
 ## Sitemap
 
 <p align="center">
-  <img src="./images/readme-pics/sitemap.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/sitemap.png" alt="Mobile website screenshot" height="400"/>
 </p>
  
 ---
@@ -45,10 +45,10 @@ Desktop:
 ## Figma wireframes
 
 <p align="center">
-  <img src="./images/readme-pics/figma-map-1.png" alt="Mobile website screenshot"/>
+  <img src="./docs/figma-map-1.png" alt="Mobile website screenshot"/>
 </p>
 <p align="center">
-  <img src="./images/readme-pics/figma-map-2.png" alt="Mobile website screenshot"/>
+  <img src="./docs/figma-map-2.png" alt="Mobile website screenshot"/>
 </p>
 
 ## Purpose:
