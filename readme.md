@@ -50,7 +50,7 @@ Desktop:
   <img src="./docs/desktop/desktop-blogpost.png" alt="desktop website screenshot" width="300"/>
   <img src="./docs/desktop/desktop-skills.png" alt="desktop website screenshot" width="300"/>
   <img src="./docs/desktop/desktop-nav.png" alt="desktop website screenshot" width="300"/>
-  <img src="./docs/desktop/desktop-contact.png" alt="desktop website screenshot" width="200"/></p>
+  <img src="./docs/desktop/desktop-contact.png" alt="desktop website screenshot" width="300"/></p>
 
 ---
 
