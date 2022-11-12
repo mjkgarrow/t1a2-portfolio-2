@@ -21,6 +21,7 @@ Mobile:
   <img src="./docs/mobile/mobile-about.png" alt="Mobile website screenshot" height="400"/>
   <img src="./docs/mobile/mobile-work.png" alt="Mobile website screenshot" height="400"/>
   <img src="./docs/mobile/mobile-blog.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/mobile/mobile-blogpost.png" alt="Mobile website screenshot" height="400"/>
   <img src="./docs/mobile/mobile-skills.png" alt="Mobile website screenshot" height="400"/>
   <img src="./docs/mobile/mobile-nav.png" alt="Mobile website screenshot" height="400"/>
   <img src="./docs/mobile/mobile-contact.png" alt="Mobile website screenshot" height="400"/>
@@ -33,6 +34,7 @@ Tablet:
   <img src="./docs/tablet/tablet-about.png" alt="tablet website screenshot" width="200"/>
   <img src="./docs/tablet/tablet-work.png" alt="tablet website screenshot" width="200"/>
   <img src="./docs/tablet/tablet-blog.png" alt="tablet website screenshot" width="200"/>
+  <img src="./docs/tablet/tablet-blogpost.png" alt="tablet website screenshot" width="200"/>
   <img src="./docs/tablet/tablet-skills.png" alt="tablet website screenshot" width="200"/>
   <img src="./docs/tablet/tablet-nav.png" alt="tablet website screenshot" width="200"/>
   <img src="./docs/tablet/tablet-contact.png" alt="tablet website screenshot" width="200"/>
@@ -41,12 +43,13 @@ Tablet:
 Desktop:
 
 <p align="center">
-  <img src="./docs/desktop/desktop-home.png" alt="desktop website screenshot" width="200"/>
-  <img src="./docs/desktop/desktop-about.png" alt="desktop website screenshot" width="200"/>
-  <img src="./docs/desktop/desktop-work.png" alt="desktop website screenshot" width="200"/>
-  <img src="./docs/desktop/desktop-blog.png" alt="desktop website screenshot" width="200"/>
-  <img src="./docs/desktop/desktop-skills.png" alt="desktop website screenshot" width="200"/>
-  <img src="./docs/desktop/desktop-nav.png" alt="desktop website screenshot" width="200"/>
+  <img src="./docs/desktop/desktop-home.png" alt="desktop website screenshot" width="300"/>
+  <img src="./docs/desktop/desktop-about.png" alt="desktop website screenshot" width="300"/>
+  <img src="./docs/desktop/desktop-work.png" alt="desktop website screenshot" width="300"/>
+  <img src="./docs/desktop/desktop-blog.png" alt="desktop website screenshot" width="300"/>
+  <img src="./docs/desktop/desktop-blogpost.png" alt="desktop website screenshot" width="300"/>
+  <img src="./docs/desktop/desktop-skills.png" alt="desktop website screenshot" width="300"/>
+  <img src="./docs/desktop/desktop-nav.png" alt="desktop website screenshot" width="300"/>
   <img src="./docs/desktop/desktop-contact.png" alt="desktop website screenshot" width="200"/></p>
 
 ---
@@ -138,6 +141,8 @@ I made the colourway, images and functionality appeal visually and the styling i
 
 - HTML
 - SCSS/SCC
+- Markdown
+- Javascript
 - [Netlify](https://www.netlify.com)
 - [Figma](https://www.figma.com)
 
