@@ -17,27 +17,44 @@ Welcome to my portfolio website.
 Mobile:
 
 <p align="center">
-  <img src="./docs/mobile-home.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/mobile/mobile-home.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/mobile/mobile-about.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/mobile/mobile-work.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/mobile/mobile-blog.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/mobile/mobile-skills.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/mobile/mobile-nav.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/mobile/mobile-contact.png" alt="Mobile website screenshot" height="400"/>
 </p>
 
 Tablet:
 
 <p align="center">
-  <img src="./docs/tablet-home.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/tablet/tablet-home.png" alt="tablet website screenshot" width="200"/>
+  <img src="./docs/tablet/tablet-about.png" alt="tablet website screenshot" width="200"/>
+  <img src="./docs/tablet/tablet-work.png" alt="tablet website screenshot" width="200"/>
+  <img src="./docs/tablet/tablet-blog.png" alt="tablet website screenshot" width="200"/>
+  <img src="./docs/tablet/tablet-skills.png" alt="tablet website screenshot" width="200"/>
+  <img src="./docs/tablet/tablet-nav.png" alt="tablet website screenshot" width="200"/>
+  <img src="./docs/tablet/tablet-contact.png" alt="tablet website screenshot" width="200"/>
 </p>
 
 Desktop:
 
 <p align="center">
-  <img src="./docs/desktop-home.png" alt="Website screenshot" width="500"/>
-</p>
+  <img src="./docs/desktop/desktop-home.png" alt="desktop website screenshot" width="200"/>
+  <img src="./docs/desktop/desktop-about.png" alt="desktop website screenshot" width="200"/>
+  <img src="./docs/desktop/desktop-work.png" alt="desktop website screenshot" width="200"/>
+  <img src="./docs/desktop/desktop-blog.png" alt="desktop website screenshot" width="200"/>
+  <img src="./docs/desktop/desktop-skills.png" alt="desktop website screenshot" width="200"/>
+  <img src="./docs/desktop/desktop-nav.png" alt="desktop website screenshot" width="200"/>
+  <img src="./docs/desktop/desktop-contact.png" alt="desktop website screenshot" width="200"/></p>
 
 ---
 
 ## Sitemap
 
 <p align="center">
-  <img src="./docs/sitemap.png" alt="Mobile website screenshot" height="400"/>
+  <img src="./docs/figma/sitemap.png" alt="Mobile website screenshot" height="400"/>
 </p>
  
 ---
@@ -45,10 +62,10 @@ Desktop:
 ## Figma wireframes
 
 <p align="center">
-  <img src="./docs/figma-map-1.png" alt="Mobile website screenshot"/>
+  <img src="./docs/figma/figma-map-1.png" alt="Mobile website screenshot"/>
 </p>
 <p align="center">
-  <img src="./docs/figma-map-2.png" alt="Mobile website screenshot"/>
+  <img src="./docs/figma/figma-map-2.png" alt="Mobile website screenshot"/>
 </p>
 
 ## Purpose:
@@ -127,3 +144,25 @@ I made the colourway, images and functionality appeal visually and the styling i
 ---
 
 This is my second portfolio. I built the first one ([here](https://neon-flan-079ccf.netlify.app/)) and learned so much I made a new one. This second site showcases much more of my skills and style.
+
+---
+
+## Resources
+
+- Images: [PXHere](https://pxhere.com)
+- Icons: [DevIcons](https://devicon.dev/)
+- Underline animation: [w3resource](https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-15.php)
+
+---
+
+## Inspiration
+
+Some of the websites that inspired me and helped focus my design.
+
+<p align="center">
+  <img src="./docs/inspiration/forge.png" alt="Forge website" height="200"/>
+  <img src="./docs/inspiration/lauren-waller.png" alt="Lauren Waller website" height="200"/>
+  <img src="./docs/inspiration/orbita.png" alt="Orbiter website" height="200"/>
+  <img src="./docs/inspiration/sharlee.png" alt= "Sharlee website" height="200"/>
+  <img src="./docs/inspiration/van-holtz.png" alt="Van Holtz website" height="200"/>
+</p>
