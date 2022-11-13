@@ -6,9 +6,9 @@ Welcome to my portfolio website.
 
 - [Github repository](https://github.com/mjkgarrow/t1a2-portfolio-2)
 
-- [Presentation video]()
+- [Presentation video](https://youtu.be/3K4Q2KrYNmk)
 
-- [Wireframe](https://www.figma.com/file/y82inPoxJzu0kpWrcMoRf3/T1A2-Portfolio)
+- [Figma wireframes](https://www.figma.com/file/y82inPoxJzu0kpWrcMoRf3/T1A2-Portfolio)
 
 ---
 
